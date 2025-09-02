@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potenzen, Wurzeln, Logarithmen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
+
+       <!--//Aufgabe 40--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 40
+
+3x<sup>3</sup> + 5x<sup>2</sup> - 6x - 2 : x - 1 =        </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe40.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 41-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 41
+
+2x<sup>3</sup> + 4x<sup>2</sup> + 4x + 2 : x + 1 = </strong>2x<sup>2</sup> + <input type="text" id="Eintrag41" maxlength="1" size="1" style= background-color:yellow ></input> x + 2 
+
+<button id="Pruef41" onclick="Aufgabe41()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe41() { 
+                                                
+                          if (Eintrag41.value=="2") {alert("Richtig"); document.getElementById("Pruef41").disabled= true;
+                          }  
+                           
+                          else if (Eintrag41.value!=="2" && Eintrag41.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag41").value="2"; window.open('Pot_Aufgabe41.html');           
+                          document.getElementById("Pruef41").disabled= true;}
+                               
+                          else if (Eintrag41.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 42--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 42
+
+2x<sup>3</sup> + 2 : x + 1 =        </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe42.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 43-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 43
+
+3x<sup>3</sup> + x<sup>2</sup> - 9x + 2 : x + 2 = </strong><input type="text" id="Eintrag43" maxlength="1" size="1" style= background-color:yellow > x<sup>2</sup> - 5x + 1 
+
+<button id="Pruef43" onclick="Aufgabe43()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe43() { 
+                                                
+                          if (Eintrag43.value=="3") {alert("Richtig"); document.getElementById("Pruef43").disabled= true;
+                          }  
+                           
+                          else if (Eintrag43.value!=="3" && Eintrag43.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag43").value="3"; window.open('Pot_Aufgabe43.html');           
+                          document.getElementById("Pruef43").disabled= true;}
+                               
+                          else if (Eintrag43.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 44--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 44
+
+4x<sup>3</sup> + 40x<sup>2</sup> - 5x - 50 : x + 10 =   </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe44.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 45-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 45
+
+6x<sup>3</sup> + 16x<sup>2</sup> - 13x - 14 : 3x + 2 = </strong>2x<sup>2</sup> + 4x - <input type="text" id="Eintrag45" maxlength="1" size="1" style= background-color:yellow ></input> 
+
+<button id="Pruef45" onclick="Aufgabe45()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe45() { 
+                                                
+                          if (Eintrag45.value=="7") {alert("Richtig"); document.getElementById("Pruef45").disabled= true;
+                          }  
+                           
+                          else if (Eintrag45.value!=="7" && Eintrag45.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag45").value="7"; window.open('Pot_Aufgabe45.html');           
+                          document.getElementById("Pruef45").disabled= true;}
+                               
+                          else if (Eintrag45.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 46--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 46
+
+16x<sup>3</sup> - 8x<sup>2</sup> - 15x + 9 : 4x - 3 =     </strong>
+
+<button  onclick="window.open('Pot_Aufgabe46.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 47-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 47
+
+                        1  
+3x<sup>3</sup> + 10x<sup>2</sup> - 4x + 16 : --- x + 2 = 6x<sup>2</sup> - <input type="text" id="Eintrag47" maxlength="1" size="1" style= background-color:yellow ></input> x + 8 
+                        2    </strong>
+
+<button id="Pruef47" onclick="Aufgabe47()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe47() { 
+                                                
+                          if (Eintrag47.value=="4") {alert("Richtig"); document.getElementById("Pruef47").disabled= true;
+                          }  
+                           
+                          else if (Eintrag47.value!=="4" && Eintrag47.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag47").value="4"; window.open('Pot_Aufgabe47.html');           
+                          document.getElementById("Pruef47").disabled= true;}
+                               
+                          else if (Eintrag47.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 48--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 48
+
+40x<sup>3</sup> - 21x<sup>2</sup> - 12,5x - 1 : 5x + 0,5 =         </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe48.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 49-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 49
+
+-4x<sup>3</sup> + 16x<sup>2</sup> - 29x + 21 : 2x - 3 = - </strong><input type="text" id="Eintrag49" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>2</sup> + 5x - 7 
+
+<button id="Pruef49" onclick="Aufgabe49()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe49() { 
+                                                
+                          if (Eintrag49.value=="2") {alert("Richtig"); document.getElementById("Pruef49").disabled= true;
+                          }  
+                           
+                          else if (Eintrag49.value!=="2" && Eintrag49.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag49").value="2"; window.open('Pot_Aufgabe49.html');           
+                          document.getElementById("Pruef49").disabled= true;}
+                               
+                          else if (Eintrag49.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 50--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 50
+
+3x<sup>3</sup> + 5x<sup>2</sup> + 3x + 1 : 3x<sup>2</sup> + 2x + 1 =  </strong>
+
+<button  onclick="window.open('Pot_Aufgabe50.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 51-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 51
+
+2x<sup>3</sup> - 9x<sup>2</sup> + 17x - 35 : x<sup>2</sup> - x + 5 = </strong>2x - <input type="text" id="Eintrag51" maxlength="1" size="1" style= background-color:yellow ></input> 
+
+<button id="Pruef51" onclick="Aufgabe51()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe51() { 
+                                                
+                          if (Eintrag51.value=="7") {alert("Richtig"); document.getElementById("Pruef51").disabled= true;
+                          }  
+                           
+                          else if (Eintrag51.value!=="7" && Eintrag51.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag51").value="7"; window.open('Pot_Aufgabe51.html');           
+                          document.getElementById("Pruef51").disabled= true;}
+                               
+                          else if (Eintrag51.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 52--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 52
+
+20x<sup>3</sup> - 90x<sup>2</sup> + 90x + 20 : 2x<sup>2</sup> - 5x - 1 =      </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe52.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 53-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 53
+
+4x<sup>4</sup> + 8x<sup>3</sup> - 11x<sup>2</sup> - 7x : 2x<sup>2</sup> + 3x - 7 = </strong><input type="text" id="Eintrag53" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>2</sup> + x 
+
+<button id="Pruef53" onclick="Aufgabe53()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe53() { 
+                                                
+                          if (Eintrag53.value=="2") {alert("Richtig"); document.getElementById("Pruef53").disabled= true;
+                          }  
+                           
+                          else if (Eintrag53.value!=="2" && Eintrag53.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag53").value="2"; window.open('Pot_Aufgabe53.html');           
+                          document.getElementById("Pruef53").disabled= true;}
+                               
+                          else if (Eintrag53.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 54--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 54
+
+2a<sup>3</sup> + 3a<sup>2</sup> - 4a + 35 : 2a + 7 =  </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe54.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 55-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 55
+
+8z<sup>3</sup> - 28z<sup>2</sup> - 12z + 2 : 4z + 2 = </strong><input type="text" id="Eintrag55" maxlength="1" size="1" style= background-color:yellow ></input> z<sup>2</sup> - 8z + 1 
+
+<button id="Pruef55" onclick="Aufgabe55()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe55() { 
+                                                
+                          if (Eintrag55.value=="2") {alert("Richtig"); document.getElementById("Pruef55").disabled= true;
+                          }  
+                           
+                          else if (Eintrag55.value!=="2" && Eintrag55.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag55").value="2"; window.open('Pot_Aufgabe55.html');           
+                          document.getElementById("Pruef55").disabled= true;}
+                               
+                          else if (Eintrag55.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 56--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 56
+
+2b<sup>4</sup> + 2b<sup>3</sup> - b<sup>2</sup> + 1 : 2b<sup>3</sup> - b + 1 =  </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe56.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 57-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 57
+
+6h<sup>6</sup> - 18h<sup>5</sup> - h<sup>4</sup> + 9h<sup>3</sup> - h<sup>2</sup> : 2h<sup>2</sup> - 1 = </strong>3h<sup>4</sup> - <input type="text" id="Eintrag57" maxlength="1" size="1" style= background-color:yellow ></input> h<sup>3</sup> + h<sup>2</sup> 
+
+<button id="Pruef57" onclick="Aufgabe57()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe57() { 
+                                                
+                          if (Eintrag57.value=="9") {alert("Richtig"); document.getElementById("Pruef57").disabled= true;
+                          }  
+                           
+                          else if (Eintrag57.value!=="9" && Eintrag57.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag57").value="9"; window.open('Pot_Aufgabe57.html');           
+                          document.getElementById("Pruef57").disabled= true;}
+                               
+                          else if (Eintrag57.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 58-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 58
+
+2x<sup>2</sup> - 4x<sup>3</sup> + x<sup>4</sup> - 7x - 4 : 2x + x<sup>3</sup> + 1 = </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe58.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 59-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 59
+
+2x<sup>6</sup> + 2x<sup>4</sup> + 5x<sup>3</sup> + 5x<sup>5</sup> : 5x + 2x<sup>2</sup> = </strong>x<sup>4</sup> + <input type="text" id="Eintrag59" maxlength="1" size="1" style= background-color:yellow ></input> <sup>2</sup> 
+
+<button id="Pruef60" onclick="Aufgabe59()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe59() { 
+                                                
+                          if (Eintrag59.value=="x") {alert("Richtig"); document.getElementById("Pruef59").disabled= true;
+                          }  
+                           
+                          else if (Eintrag59.value!=="x" && Eintrag59.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag59").value="x"; window.open('Pot_Aufgabe59.html');           
+                          document.getElementById("Pruef59").disabled= true;}
+                               
+                          else if (Eintrag59.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 60-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 60
+
+a<sup>3</sup> + a<sup>4</sup> - 2a : 2a + 2 + a<sup>2</sup> = </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe60.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 61-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 61
+
+z - 2z<sup>3</sup> + 5z<sup>4</sup> - z<sup>2</sup> : 1 - z - 2z<sup>2</sup> + 5z<sup>3</sup> = </strong><input type="text" id="Eintrag61" maxlength="1" size="1" style= background-color:yellow ></input> 
+
+<button id="Pruef61" onclick="Aufgabe61()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe61() { 
+                                                
+                          if (Eintrag61.value=="z") {alert("Richtig"); document.getElementById("Pruef61").disabled= true;
+                          }  
+                           
+                          else if (Eintrag61.value!=="z" && Eintrag61.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag61").value="z"; window.open('Pot_Aufgabe61.html');           
+                          document.getElementById("Pruef61").disabled= true;}
+                               
+                          else if (Eintrag61.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 62-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 62
+
+9a<sup>4</sup> - 58a<sup>2</sup>b<sup>2</sup> + 49b<sup>4</sup> : 3a<sup>2</sup> - 4ab - 7b<sup>2</sup> =     </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe62.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 63-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 63
+
+y<sup>3n</sup> + z<sup>3n</sup> : y<sup>n</sup> + z<sup>n</sup> = </strong><input type="text" id="Eintrag63" maxlength="1" size="1" style= background-color:yellow ></input><sup>2n</sup> - y<sup>n</sup>z<sup>n</sup> + z<sup>2n</sup> 
+
+<button id="Pruef63" onclick="Aufgabe63()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe63() { 
+                                                
+                          if (Eintrag63.value=="y") {alert("Richtig"); document.getElementById("Pruef63").disabled= true;
+                          }  
+                           
+                          else if (Eintrag63.value!=="y" && Eintrag63.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag63").value="y"; window.open('Pot_Aufgabe63.html');           
+                          document.getElementById("Pruef63").disabled= true;}
+                               
+                          else if (Eintrag63.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 64-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 64
+
+a<sup>n+4</sup> - a<sup>n</sup>n : a<sup>3</sup> + a =      </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe64.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 65-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 65
+
+x<sup>9</sup> - 3x<sup>6</sup>y<sup>3</sup> + 3x<sup>3</sup>y<sup>6</sup> - y<sup>9</sup> : x<sup>4</sup> - x<sup>3</sup>y - xy<sup>3</sup> + y<sup>4</sup> = </strong>
+
+=  x<sup>5</sup> + x<sup>4</sup>y + x<sup>3</sup>y<sup>2</sup> - x<sup>2</sup>y<sup>3</sup> - xy<sup>4</sup> - <input type="text" id="Eintrag65" maxlength="1" size="1" style= background-color:yellow ></input> <sup>5</sup>
+
+<button id="Pruef65" onclick="Aufgabe65()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe65() { 
+                                                
+                          if (Eintrag65.value=="y") {alert("Richtig"); document.getElementById("Pruef65").disabled= true;
+                          }  
+                           
+                          else if (Eintrag65.value!=="y" && Eintrag65.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag65").value="y"; window.open('Pot_Aufgabe65.html');           
+                          document.getElementById("Pruef65").disabled= true;}
+                               
+                          else if (Eintrag65.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 66-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 66
+
+      1        1             1                       
+a<sup>2</sup> - --- ab - --- b<sup>2</sup> : 2a + --- b =         
+      2        9             3     </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe66.html');" >Lösung</button></p></pre>
+
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
