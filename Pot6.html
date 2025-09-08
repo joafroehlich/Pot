@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potenzen, Wurzeln, Logarithmen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
+
+<!--//Aufgabe 110-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 110
+
+<img src="Aufgabe110.jpg" align="center"> </strong><button  onclick="window.open('Pot_Aufgabe110.html');" >Lösung</button></p></pre>  
+
+<!--//Aufgabe 111-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 111
+
+<img src="Aufgabe111.jpg" align="center"> </strong><button  onclick="window.open('Pot_Aufgabe110.html');" >Lösung</button></p></pre>   
+
+
+<!--//Aufgabe 112-->
+
+  <pre style="position: relative; "><p class ="Aufgabe" ><strong>Aufgabe 112
+
+<img src="Aufgabe112.jpg" align="center" > <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button>
+<input type="text"  id="Eintrag112" maxlength="2" style=" position: absolute; top: 3.8em; left: 9.8em; width: 1em; "></strong></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe112() { 
+                                                
+                          if (Eintrag112.value=="10") {alert("Richtig"); document.getElementById("Pruef112").disabled= true;
+                          }  
+                           
+                          else if (Eintrag112.value!=="10" && Eintrag112.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag112").value="10"; window.open('Pot_Aufgabe112.html');           
+                          document.getElementById("Pruef112").disabled= true;}
+                               
+                          else if (Eintrag112.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 113-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 113
+
+<img src="Aufgabe113.jpg" align="middle"> </strong><button  onclick="window.open('Pot_Aufgabe113.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 114-->
+
+  <pre style="position: relative; "><p class ="Aufgabe" ><strong>Aufgabe 114
+
+<img src="Aufgabe114.jpg" align="center" > <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button>
+<input type="text"  id="Eintrag114" maxlength="1" style=" position: absolute; top: 3.3em; left: 7.1em; width: 1em; "></strong></p></pre>
+    
+                       <script>
+                        function Aufgabe114() { 
+                                                
+                          if (Eintrag114.value=="2") {alert("Richtig"); document.getElementById("Pruef114").disabled= true;
+                          }  
+                           
+                          else if (Eintrag114.value!=="2" && Eintrag114.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag114").value="2"; window.open('Pot_Aufgabe114.html');           
+                          document.getElementById("Pruef114").disabled= true;}
+                               
+                          else if (Eintrag114.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+                    
+<!--//Aufgabe 115-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 115
+
+<img src="Aufgabe115.jpg" align="middle"> </strong><button  onclick="window.open('Pot_Aufgabe115.html');" >Lösung</button></p></pre>   
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>

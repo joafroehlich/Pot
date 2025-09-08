@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potenzen, Wurzeln, Logarithmen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
+
+ <!--//Aufgabe 140-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 140
+
+5<sup>x</sup> = 7   </strong>x = <input type="text" id="Eintrag140" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe140() { 
+                                                
+                          if (Eintrag140.value=="1,21") {alert("Richtig"); document.getElementById("Pruef140").disabled= true;
+                          }  
+                           
+                          else if (Eintrag140.value!=="1,21" && Eintrag140.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag140").value="1,21"; window.open('Pot_Aufgabe140.html');
+                                            document.getElementById("Pruef140").disabled= true;}
+                               
+                          else if (Eintrag140.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>     
+                      
+<!--//Aufgabe 141-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 141
+
+3<sup>x+1</sup> = 2 * 32<sup>x</sup>   </strong><button  onclick="window.open('Pot_Aufgabe141.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 142-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 142
+
+3<sup>2x</sup> = 4 * 5<sup>x+3</sup>   </strong>x = <input type="text" id="Eintrag142" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe142() { 
+                                                
+                          if (Eintrag142.value=="10,6") {alert("Richtig"); document.getElementById("Pruef142").disabled= true;
+                          }  
+                           
+                          else if (Eintrag142.value!=="10,6" && Eintrag142.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag142").value="10,6"; window.open('Pot_Aufgabe142.html');           
+                          document.getElementById("Pruef142").disabled= true;}
+                               
+                          else if (Eintrag142.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 143-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 143
+
+18 * 27<sup>x-1</sup> = 2 * 52<sup>x+1</sup>   </strong><button  onclick="window.open('Pot_Aufgabe143.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 144-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 144
+
+3<sup>x-1</sup> = 120   </strong>x = <input type="text" id="Eintrag144" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe144() { 
+                                                
+                          if (Eintrag144.value=="5,36") {alert("Richtig"); document.getElementById("Pruef144").disabled= true;
+                          }  
+                           
+                          else if (Eintrag144.value!=="5,36" && Eintrag144.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag144").value="5,36"; window.open('Pot_Aufgabe144.html');           
+                          document.getElementById("Pruef144").disabled= true;}
+                               
+                          else if (Eintrag144.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 145-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 145
+
+5 * 4<sup>2x + 1</sup> = 26   </strong><button  onclick="window.open('Pot_Aufgabe145.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 146-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 146
+
+3 * 4<sup>x+1</sup> = 2<sup>x-1</sup>   </strong>x = <input type="text" id="Eintrag146" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe146() { 
+                                                
+                          if (Eintrag146.value=="-4,59") {alert("Richtig"); document.getElementById("Pruef146").disabled= true;
+                          }  
+                           
+                          else if (Eintrag146.value!=="-4,59" && Eintrag146.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag146").value="-4,59"; window.open('Pot_Aufgabe146.html');           
+                          document.getElementById("Pruef146").disabled= true;}
+                               
+                          else if (Eintrag146.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 147-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 147
+
+5<sup>x</sup> = 2 * 7<sup>x+1</sup>   </strong><button  onclick="window.open('Pot_Aufgabe147.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 148-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 148
+
+5 * 6<sup>2x</sup> = 6 * 5<sup>2x</sup>   </strong>x = <input type="text" id="Eintrag148" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe148() { 
+                                                
+                          if (Eintrag148.value=="0,5") {alert("Richtig"); document.getElementById("Pruef148").disabled= true;
+                          }  
+                           
+                          else if (Eintrag148.value!=="0,5" && Eintrag148.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag148").value="0,5"; window.open('Pot_Aufgabe148.html');           
+                          document.getElementById("Pruef148").disabled= true;}
+                               
+                          else if (Eintrag148.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                        
+                      
+
+<!--//Aufgabe 149-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 149
+
+22 * 3<sup>x-3</sup> = 9 * 5<sup>3+x</sup>   </strong><button  onclick="window.open('Pot_Aufgabe149.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 150-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 150
+
+2<sup>4x-3</sup> * 4<sup>2x+1</sup> = 8<sup>x</sup>   </strong>x = <input type="text" id="Eintrag150" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe150() { 
+                                                
+                          if (Eintrag150.value=="0,2") {alert("Richtig"); document.getElementById("Pruef150").disabled= true;
+                          }  
+                           
+                          else if (Eintrag150.value!=="0,2" && Eintrag150.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag150").value="0,2"; window.open('Pot_Aufgabe150.html');           
+                          document.getElementById("Pruef150").disabled= true;}
+                               
+                          else if (Eintrag150.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 151-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 151
+
+33<sup>x+1</sup> * 9<sup>1-2x</sup> = 27<sup>x</sup>   </strong><button  onclick="window.open('Pot_Aufgabe151.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 152-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 152
+
+3<sup>2x</sup> - 4 * 3<sup>x</sup> + 3  = 0   </strong>x<sub>1</sub> = <input type="text" id="Eintrag152" maxlength="1" size="1" style= background-color:yellow ></input> x<sub>2</sub> = 1 <button id="Pruef152" onclick="Aufgabe152()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe152() { 
+                                                
+                          if (Eintrag152.value=="0") {alert("Richtig"); document.getElementById("Pruef152").disabled= true;
+                          }  
+                           
+                          else if (Eintrag152.value!=="0" && Eintrag152.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag152").value="0"; window.open('Pot_Aufgabe152.html');           
+                          document.getElementById("Pruef152").disabled= true;}
+                               
+                          else if (Eintrag152.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 153-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 153
+
+9<sup>x</sup> + 3<sup>x</sup> = 6   </strong><button  onclick="window.open('Pot_Aufgabe153.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 154-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 154
+
+4<sup>x</sup> - 12 * 2<sup>x</sup> + 32 = 0   </strong>x<sub>1</sub> = 2 x<sub>2</sub> = <input type="text" id="Eintrag154" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef154" onclick="Aufgabe154()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe154() { 
+                                                
+                          if (Eintrag154.value=="3") {alert("Richtig"); document.getElementById("Pruef154").disabled= true;
+                          }  
+                           
+                          else if (Eintrag154.value!=="3" && Eintrag154.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag154").value="3"; window.open('Pot_Aufgabe154.html');           
+                          document.getElementById("Pruef154").disabled= true;}
+                               
+                          else if (Eintrag154.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 155-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 155
+
+7<sup>x</sup> + 4 = 21 * 7<sup>-x</sup>   </strong><button  onclick="window.open('Pot_Aufgabe155.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 156-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 156
+
+lg(3x + 1) = 1   </strong>x = <input type="text" id="Eintrag156" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef156" onclick="Aufgabe156()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe156() { 
+                                                
+                          if (Eintrag156.value=="3") {alert("Richtig"); document.getElementById("Pruef156").disabled= true;
+                          }  
+                           
+                          else if (Eintrag156.value!=="3" && Eintrag156.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag156").value="3"; window.open('Pot_Aufgabe156.html');           
+                          document.getElementById("Pruef156").disabled= true;}
+                               
+                          else if (Eintrag156.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 157-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 157
+
+2 * lgx = lg(x + 6)   </strong><button  onclick="window.open('Pot_Aufgabe157.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 158-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 158
+
+</strong> <img src="Aufgabe158.jpg" align="center">   x = <input type="text" id="Eintrag158" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef158" onclick="Aufgabe158()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe158() { 
+                                                
+                          if (Eintrag158.value=="-1,23") {alert("Richtig"); document.getElementById("Pruef158").disabled= true;
+                          }  
+                           
+                          else if (Eintrag158.value!=="-1,23" && Eintrag158.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag158").value="-1,23"; window.open('Pot_Aufgabe158.html');           
+                          document.getElementById("Pruef158").disabled= true;}
+                               
+                          else if (Eintrag158.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 159-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 159
+
+2<sup>x</sup> - 3<sup>x+1</sup> = 2<sup>x+2</sup> - 3<sup>x+3</sup>   </strong><button  onclick="window.open('Pot_Aufgabe159.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 160-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 160
+
+<img src="Aufgabe160.jpg" align="center">   </strong>x = <input type="text" id="Eintrag160" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef160" onclick="Aufgabe160()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe160() { 
+                                                
+                          if (Eintrag160.value=="1,136") {alert("Richtig"); document.getElementById("Pruef160").disabled= true;
+                          }  
+                           
+                          else if (Eintrag160.value!=="1,136" && Eintrag160.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag160").value="1,136"; window.open('Pot_Aufgabe160.html');           
+                          document.getElementById("Pruef160").disabled= true;}
+                               
+                          else if (Eintrag160.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 161-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 161
+
+2 * e<sup>2x-3</sup> = e<sup>-x</sup>        </strong><button  onclick="window.open('Pot_Aufgabe161.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 162-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 162
+
+e<sup>x</sup> * (e<sup>x</sup> - 1) = 0   </strong>x = <input type="text" id="Eintrag162" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef162" onclick="Aufgabe162()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe162() { 
+                                                
+                          if (Eintrag162.value=="0") {alert("Richtig"); document.getElementById("Pruef162").disabled= true;
+                          }  
+                           
+                          else if (Eintrag162.value!=="0" && Eintrag162.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag162").value="0"; window.open('Pot_Aufgabe162.html');           
+                          document.getElementById("Pruef162").disabled= true;}
+                               
+                          else if (Eintrag162.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 163-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 163
+
+200 * e<sup>x</sup> = 2000   </strong><button  onclick="window.open('Pot_Aufgabe163.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 164-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 164
+
+log<sub>2</sub> 5 = x   </strong>x = <input type="text" id="Eintrag164" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef164" onclick="Aufgabe164()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe164() { 
+                                                
+                          if (Eintrag164.value=="2,32") {alert("Richtig"); document.getElementById("Pruef164").disabled= true;
+                          }  
+                           
+                          else if (Eintrag164.value!=="2,32" && Eintrag164.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag164").value="2,32"; window.open('Pot_Aufgabe164.html');           
+                          document.getElementById("Pruef164").disabled= true;}
+                               
+                          else if (Eintrag164.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 165-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 165
+
+4 + 3 * lg x = 5,2   </strong><button  onclick="window.open('Pot_Aufgabe165.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 166-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 166
+
+5 - 2 * lg(3x) = 12,4   </strong>x = <input type="text" id="Eintrag166" maxlength="8" size="3" style= background-color:yellow ></input> <button id="Pruef166" onclick="Aufgabe166()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe166() { 
+                                                
+                          if (Eintrag166.value=="0,000066") {alert("Richtig"); document.getElementById("Pruef166").disabled= true;
+                          }  
+                           
+                          else if (Eintrag166.value!=="0,000066" && Eintrag166.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag166").value="0,000066"; window.open('Pot_Aufgabe166.html');           
+                          document.getElementById("Pruef166").disabled= true;}
+                               
+                          else if (Eintrag166.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 167-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 167
+
+lg x<sup>3</sup> + 2 * lg x<sup>2</sup> = 20,4   </strong><button  onclick="window.open('Pot_Aufgabe167.html');" >Lösung</button></p></pre>   
+                      
+<!--//Aufgabe 168-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 168
+
+<img src="Aufgabe168.jpg" align="center">   </strong>x = <input type="text" id="Eintrag168" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef168" onclick="Aufgabe168()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe168() { 
+                                                
+                          if (Eintrag168.value=="212,3") {alert("Richtig"); document.getElementById("Pruef168").disabled= true;
+                          }  
+                           
+                          else if (Eintrag168.value!=="212,3" && Eintrag168.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag168").value="212,3"; window.open('Pot_Aufgabe168.html');
+                                            document.getElementById("Pruef168").disabled= true;}
+                               
+                          else if (Eintrag168.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>     
+                      
+<!--//Aufgabe 169-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 169
+
+ 1             3
+--- * lg x<sup>2</sup> + --- * lg x = 0,0234   </strong><button  onclick="window.open('Pot_Aufgabe169.html');" >Lösung</button>      
+<strong> 3             2  </strong> </p></pre>   
+
+<!--//Aufgabe 170-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 170
+
+lg(2x + 3) - lg(3x - 2) = 2   </strong>x = <input type="text" id="Eintrag170" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef170" onclick="Aufgabe170()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe170() { 
+                                                
+                          if (Eintrag170.value=="0,68") {alert("Richtig"); document.getElementById("Pruef170").disabled= true;
+                          }  
+                           
+                          else if (Eintrag170.value!=="0,68" && Eintrag170.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag170").value="0,68"; window.open('Pot_Aufgabe170.html');           
+                          document.getElementById("Pruef170").disabled= true;}
+                               
+                          else if (Eintrag170.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 171-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 171
+
+lg(3x) + lg(4x) = 5 - lg(2x)   </strong><button  onclick="window.open('Pot_Aufgabe171.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 172-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 172
+
+2 * lg(x + 1) = lg(x - 1) + 1   </strong>
+
+x<sub>1</sub> = <input type="text" id="Eintrag172" maxlength="4" size="1" style= background-color:yellow ></input> x<sub>2</sub> = 6,24 <button id="Pruef172" onclick="Aufgabe172()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe172() { 
+                                                
+                          if (Eintrag172.value=="1,76") {alert("Richtig"); document.getElementById("Pruef172").disabled= true;
+                          }  
+                           
+                          else if (Eintrag172.value!=="1,76" && Eintrag172.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag172").value="1,76"; window.open('Pot_Aufgabe172.html');           
+                          document.getElementById("Pruef172").disabled= true;}
+                               
+                          else if (Eintrag172.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 173-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 173
+
+lg5<sup>x</sup> = lg2<sup>x</sup> + 2   </strong> <button  onclick="window.open('Pot_Aufgabe173.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 174-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 174
+
+5<sup>lgx</sup> = 2 * 3<sup>lgx</sup>   </strong>x = <input type="text" id="Eintrag174" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef174" onclick="Aufgabe174()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe174() { 
+                                                
+                          if (Eintrag174.value=="22,7") {alert("Richtig"); document.getElementById("Pruef174").disabled= true;
+                          }  
+                           
+                          else if (Eintrag174.value!=="22,7" && Eintrag174.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag174").value="22,7"; window.open('Pot_Aufgabe174.html');           
+                          document.getElementById("Pruef174").disabled= true;}
+                               
+                          else if (Eintrag174.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 175-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 175
+
+3<sup>2*lgx</sup> = 12   </strong><button  onclick="window.open('Pot_Aufgabe175.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 176-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 176
+
+Ein gerades dreiseitiges Prisma hat ein Volumen 
+von 400 cm³. Seine Grundfläche hat die Winkel 
+α = 42,5° und β = 71,3°. 
+Wie groß ist das Volumen V des umschriebenen Zylinders?   </strong> 
+
+V = <input type="text" id="Eintrag176" maxlength="6" size="2" style= background-color:yellow ></input> cm³ <button id="Pruef176" onclick="Aufgabe176()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe176() { 
+                                                
+                          if (Eintrag176.value=="1072,5") {alert("Richtig"); document.getElementById("Pruef176").disabled= true;
+                          }  
+                           
+                          else if (Eintrag176.value!=="1072,5" && Eintrag176.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag176").value="1072,5"; window.open('Pot_Aufgabe176.html');           
+                          document.getElementById("Pruef176").disabled= true;}
+                               
+                          else if (Eintrag176.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                        
+                      
+
+<!--//Aufgabe 177-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 177
+
+Ein schiefer Kegel hat eine längste Mantellinie 
+von 30 cm, mit einem Neigungswinkel von 31,2°. 
+Seine kürzeste hat einen Neigungswinkel von 82,4°. 
+Wie groß ist das Volumen V des Kegels? </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe177.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 178-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 178
+
+Einem geraden Kegel mit dem Öffnungswinkel α = 31,6° 
+ist eine Kugel mit dem Durchmesser d = 55,4 cm einbeschrieben. 
+Wie groß ist das Volumen V des Kegels?   </strong> 
+
+V = <input type="text" id="Eintrag178" maxlength="5" size="2" style= background-color:yellow ></input> dm³ <button id="Pruef178" onclick="Aufgabe178()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe178() { 
+                                                
+                          if (Eintrag178.value=="181,4") {alert("Richtig"); document.getElementById("Pruef178").disabled= true;
+                          }  
+                           
+                          else if (Eintrag178.value!=="181,4" && Eintrag178.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag178").value="181,4"; window.open('Pot_Aufgabe178.html');           
+                          document.getElementById("Pruef178").disabled= true;}
+                               
+                          else if (Eintrag178.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 179-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 179
+
+Berechnen Sie den Winkel α, den eine Raumdiagonale 
+des Quaders mit einer Flächendiagonale und den 
+Schnittwinkel β, den zwei Raumdiagonalen miteinander bilden. </strong>   
+
+<img src="Aufgabe179.jpg" > 
+
+<button  onclick="window.open('Pot_Aufgabe179.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 180-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 180
+
+Wie groß ist die Seite d?  </strong>
+
+<img src="Aufgabe180.jpg" >
+
+d = <input type="text" id="Eintrag180" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef180" onclick="Aufgabe180()">Prüfen</button></p></pre>  
+    
+ 
+                      <script>
+                        function Aufgabe180() { 
+                                                
+                          if (Eintrag180.value=="8") {alert("Richtig"); document.getElementById("Pruef180").disabled= true;
+                          }  
+                           
+                          else if (Eintrag180.value!=="8" && Eintrag180.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag180").value="8"; window.open('Pot_Aufgabe180.html');           
+                          document.getElementById("Pruef180").disabled= true;}
+                               
+                          else if (Eintrag180.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+                
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
