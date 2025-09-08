@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potenzen, Wurzeln, Logarithmen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
+
+<!--//Aufgabe 176-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 176
+
+Ein Sparer hat 3 200 € zu 6% angelegt. Nach wie viel Jahren
+hat er mehr als 5 000 €?. Nach ca. </strong><input type="text" id="Eintrag176" maxlength="1" size="1" style= background-color:yellow ></input> Jahren. <button id="Pruef176" onclick="Aufgabe176()">Prüfen</button> 
+<strong>Nach wie viel Jahren hat sich sein Kapital verdoppelt?   </strong></p></pre> 
+    
+                      <script>
+                        function Aufgabe176() { 
+                                                
+                          if (Eintrag176.value=="8") {alert("Richtig"); document.getElementById("Pruef176").disabled= true;
+                          }  
+                           
+                          else if (Eintrag176.value!=="8" && Eintrag176.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag176").value="8"; window.open('Pot_Aufgabe176.html');           
+                          document.getElementById("Pruef176").disabled= true;}
+                               
+                          else if (Eintrag176.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                        
+                      
+
+<!--//Aufgabe 177-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 177
+
+Ein Kunde bekommt von seiner Bank 2 Angebote.
+Angebot 1: Aus 2 000 € werden in 5 Jahren 2 500 €.
+Angebot 2: Aus 1 000 € werden in 6 Jahren 1 340 €.
+Wie hoch ist der günstigere Zinssatz? </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe177.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 178-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 178
+
+Auf ein Sparbuch wurde ein Betrag eingezahlt 
+und mit 3% verzinst. 
+Nach 18 Jahren ist er auf 851,22 € angewachsen. 
+Wie viel € wurden eingezahlt?  </strong> 
+
+Es waren <input type="text" id="Eintrag178" maxlength="3" size="1" style= background-color:yellow ></input> € <button id="Pruef178" onclick="Aufgabe178()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe178() { 
+                                                
+                          if (Eintrag178.value=="500") {alert("Richtig"); document.getElementById("Pruef178").disabled= true;
+                          }  
+                           
+                          else if (Eintrag178.value!=="500" && Eintrag178.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag178").value="500"; window.open('Pot_Aufgabe178.html');           
+                          document.getElementById("Pruef178").disabled= true;}
+                               
+                          else if (Eintrag178.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 179-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 179
+
+Welches Anfangskapital ist in 7 Jahren bei einem 
+Zinssatz von 6,5% auf 15 540 € angewachsen?  </strong>   
+
+<button  onclick="window.open('Pot_Aufgabe179.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 180-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 180
+
+Eine Reise kostet 10 000 €. Wie viel Jahre dauert es, 
+bis man diesen Betrag angespart hat, wenn man zum 
+Beginn eines Jahres 1 000 € einzahlt und sie zu 5% 
+verzinst werden?  </strong>
+
+Es dauert <input type="text" id="Eintrag180" maxlength="1" size="1" style= background-color:yellow ></input> Jahre. <button id="Pruef180" onclick="Aufgabe180()">Prüfen</button></p></pre>  
+    
+ 
+                      <script>
+                        function Aufgabe180() { 
+                                                
+                          if (Eintrag180.value=="8") {alert("Richtig"); document.getElementById("Pruef180").disabled= true;
+                          }  
+                           
+                          else if (Eintrag180.value!=="8" && Eintrag180.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag180").value="8"; window.open('Pot_Aufgabe180.html');           
+                          document.getElementById("Pruef180").disabled= true;}
+                               
+                          else if (Eintrag180.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 181-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 181
+
+Wie viel Geld hat man nach 5 Jahren auf seinem Sparbuch, 
+wennzu Beginn eines Jahres 100 € eingezahlt werden und 
+es zu 8% verzinst wird?  </strong>   
+
+<button  onclick="window.open('Pot_Aufgabe181.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 182-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 182
+
+a) Ein Möbelhaus bietet ein komplettes Wohnzimmer für 6 799 € an. 
+Wie viel € hätte ein Kunde nach dem Kauf noch übrig, wenn er 
+6 Jahre vorher 1 000 € zu Beginn eines Jahres auf sein Sparkonto 
+eingezahlt hätte und es zu 4% verzinst worden wäre?</strong> 
+Es sind <input type="text" id="Eintrag182" maxlength="5" size="2" style= background-color:yellow ></input> €. <button id="Pruef182" onclick="Aufgabe182()">Prüfen</button>
+<strong>b) 2 Jahre später ist das Angebot 20% teurer geworden. 
+Wie viel hat er jetzt nach dem Kauf übrig?   </strong> </p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe182() { 
+                                                
+                          if (Eintrag182.value=="99,27") {alert("Richtig"); document.getElementById("Pruef182").disabled= true;
+                          }  
+                           
+                          else if (Eintrag182.value!=="99,27" && Eintrag182.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag182").value="99,27"; window.open('Pot_Aufgabe182.html');           
+                          document.getElementById("Pruef182").disabled= true;}
+                               
+                          else if (Eintrag182.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 183-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 183
+
+hat 60 000 € auf seinem Konto, die mit 5% verzinst sind. 
+Nach wie viel Jahren kann er am Ende des Jahres 10 000 € 
+Zinsen abheben? 
+b) Wie viel Jahre kann er 5 000 € abheben, wenn er 30 000 € 
+zu einem Zinssatz von 5% angelegt hat?</strong> 
+Es sind <input type="text" id="Eintrag183" maxlength="1" size="1" style= background-color:yellow ></input> Jahre. <button id="Pruef183" onclick="Aufgabe183()">Prüfen</button>
+<strong>Wie viel hat er dann noch übrig? 
+c) Nach wie viel Jahren sind seine 60 000 € bei einer 
+jährlichen Abhebung von 10 000 € bei einem Zinssatz 
+von 10% aufgebraucht?  </strong></p></pre>  
+
+
+ 
+                      <script>
+                        function Aufgabe183() { 
+                                                
+                          if (Eintrag183.value=="7") {alert("Richtig"); document.getElementById("Pruef183").disabled= true;
+                          }  
+                           
+                          else if (Eintrag183.value!=="7" && Eintrag183.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag183").value="7"; window.open('Pot_Aufgabe183.html');           
+                          document.getElementById("Pruef183").disabled= true;}
+                               
+                          else if (Eintrag183.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 184-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 184
+
+Welchen gleich bleibenden Betrag muss man zu Beginn eines 
+Jahres auf sein Sparbuch einzahlen, wenn man nach zehn 
+Jahren 10 000 € haben will und ein Zinssatz von 10% 
+vereinbart wurde? </strong>
+
+<button  onclick="window.open('Pot_Aufgabe184.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 185-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 185
+
+Auf wie viel ist nach 30 Jahren ein Kapital angewachsen, 
+wenn zu Beginn eines jeden Jahres 4 700 € eingezahlt 
+werden und ein Zinssatz von 5% vereinbart ist? 
+Wie oft können dann 20 000 € pro Jahr abgehoben werden?  </strong>
+
+<input type="text" id="Eintrag185" maxlength="2" size="1" style= background-color:yellow ></input> mal <button id="Pruef185" onclick="Aufgabe185()">Prüfen</button> </p></pre> 
+
+
+                      <script>
+                        function Aufgabe185() { 
+                                                
+                          if (Eintrag185.value=="30") {alert("Richtig"); document.getElementById("Pruef185").disabled= true;
+                          }  
+                           
+                          else if (Eintrag185.value!=="30" && Eintrag185.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag185").value="30"; window.open('Pot_Aufgabe185.html');           
+                          document.getElementById("Pruef185").disabled= true;}
+                               
+                          else if (Eintrag185.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 186-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 186
+
+2 Wirtschaftsinstitute haben Daten über die Erdölförderung ermittelt:
+Institut 1: 1995 136 Mrd. t; 2005 106 Mrd. t; 2015 76 Mrd. t.
+Institut 2: 1995 136 Mrd. t; 2005 97 Mrd. t; 2015 50 Mrd. t.
+Nach wie viel Jahren sind die Reserven nach Institut 1 erschöpft?
+Wie viel t stünden nach Institut 2 dann noch zur Verfügung?   </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe186.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 187-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 187
+
+3 Jugendliche möchten in 2 Jahren den Führerschein machen:
+Jugendlicher A: 
+Schon 100 € angespart, jeden Monat kommen 20 € dazu.
+Jugendlicher B: 
+5 € Anfangskapital, dann alle 3 Monate den angesparten Betrag dazu.
+Jugendlicher C:
+Im ersten Monat 1 €, im zweiten 4 €, im dritten 9 €, 
+im vierten 16 € usw.
+Wie hoch ist der größte Betrag nach 2 Jahren?  </strong> 
+
+Es sind <input type="text" id="Eintrag187" maxlength="4" size="1" style= background-color:yellow ></input> €. <button id="Pruef187" onclick="Aufgabe187()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe187() { 
+                                                
+                          if (Eintrag187.value=="4900") {alert("Richtig"); document.getElementById("Pruef187").disabled= true;
+                          }  
+                           
+                          else if (Eintrag187.value!=="4900" && Eintrag187.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag187").value="4900"; window.open('Pot_Aufgabe187.html');           
+                          document.getElementById("Pruef187").disabled= true;}
+                               
+                          else if (Eintrag187.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 188-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 188
+
+Bakterien vermehren sich so, dass sich ihre Anzahl 
+alle 30 Minuten verdoppelt. Um 12.00 Uhr waren es 
+100 Bakterien.
+Wie viel Bakterien sind es um 17.00 Uhr?
+Wie viel waren es um 11.00 Uhr? </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe188.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 189-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 189
+
+Ein Angestellter verdient  3 500 € pro Monat. 
+Sein Gehalt steigt um 3% jährlich an. 
+Wie viel verdient er in 5 Jahren monatlich? 
+Nach wie viel Jahren verdient er 4 433,70 €?  </strong> 
+
+Nach <input type="text" id="Eintrag189" maxlength="1" size="1" style= background-color:yellow ></input> Jahren. <button id="Pruef189" onclick="Aufgabe189()">Prüfen</button></p></pre>  
+
+
+                      <script>
+                        function Aufgabe189() { 
+                                                
+                          if (Eintrag189.value=="8") {alert("Richtig"); document.getElementById("Pruef189").disabled= true;
+                          }  
+                           
+                          else if (Eintrag189.value!=="8" && Eintrag189.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag189").value="8"; window.open('Pot_Aufgabe189.html');           
+                          document.getElementById("Pruef189").disabled= true;}
+                               
+                          else if (Eintrag189.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 190-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 190
+
+Im Jahr 2000 kostete der Liter Benzin 0,90 €. 
+Wie viel kostet er im Jahr 2030, wenn mit einer 
+jährlichen Steigerung von 10% gerechnet wird? 
+Um wie viel Prozent dürfte der Preis jährlich steigen, 
+wenn der Liter im Jahr 2020 1,52 € kosten darf? " </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe190.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 191-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 191
+
+Eine Reihe von Stäben ist so angeordnet, dass der 
+folgende Stab immer doppelt so groß ist wie der 
+vorherige. Der erste Stab ist 1 cm hoch. 
+Wie hoch ist der 6. Stab? 
+Welcher Stab ist ca. 10 000 km hoch?  </strong>
+
+Es ist der <input type="text" id="Eintrag191" maxlength="2" size="1" style= background-color:yellow ></input> Stab. <button id="Pruef191" onclick="Aufgabe191()">Prüfen</button> </p></pre> 
+
+
+                      <script>
+                        function Aufgabe191() { 
+                                                
+                          if (Eintrag191.value=="30") {alert("Richtig"); document.getElementById("Pruef191").disabled= true;
+                          }  
+                           
+                          else if (Eintrag191.value!=="30" && Eintrag191.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag191").value="30"; window.open('Pot_Aufgabe191.html');           
+                          document.getElementById("Pruef191").disabled= true;}
+                               
+                          else if (Eintrag191.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 192-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 192
+
+Jemand hat die Absicht abzunehmen und zwar 
+jeden Monat 2% seines Körpergewichts. 
+Im Moment wiegt die Person 120 kg. 
+Wie viel wiegt sie nach 5 Monaten? 
+Nach wie viel Monaten wiegt sie 90 kg?    </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe193.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 193-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 193
+
+Jeans werden schon beim Neukauf ausgewaschen angeboten. 
+Bei jedem Waschgang verlieren sie 10% der Farbe. Wie oft 
+muss eine Jeans gewaschen werden, wenn noch 60% 
+der ursprünglichen Farbe vorhanden sein sollen? 
+Wie viel Prozent der Farbe müsste sie verlieren, 
+wenn dafür 4 maliges Waschen reichen soll?   </strong> 
+
+Es sind <input type="text" id="Eintrag193" maxlength="2" size="1" style= background-color:yellow ></input> % <button id="Pruef193" onclick="Aufgabe193()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe193() { 
+                                                
+                          if (Eintrag193.value=="12") {alert("Richtig"); document.getElementById("Pruef193").disabled= true;
+                          }  
+                           
+                          else if (Eintrag193.value!=="12" && Eintrag193.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag193").value="12"; window.open('Pot_Aufgabe193.html');           
+                          document.getElementById("Pruef193").disabled= true;}
+                               
+                          else if (Eintrag193.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 194-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 194
+
+Ein Pkw hat im ersten Jahr einen Wertverlust 
+von 24,2%, danach einen gleich bleibenden von 5,5%. 
+Wie hoch ist dann der Wertverlust nach 5 Jahren? 
+Welchen Wert hat ein Fahrzeug mit einem Neupreis 
+von 36 000 € nach 10 Jahren?  </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe194.html');" >Lösung</button></p></pre>   
+                      
+<!--//Aufgabe 195-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 195
+
+In 1 000 m herrscht ein Luftdruck von 900 hPa, 
+in 9 000 m  einer von 300 hPa (Hektopascal). 
+Wie groß ist der Abnahmefaktor pro 1 000 m? 
+Wie hoch ist der Druck in 4 500 m Höhe?   </strong>
+
+Es sind <input type="text" id="Eintrag195" maxlength="5" size="2" style= background-color:yellow ></input> hPa <button id="Pruef195" onclick="Aufgabe195()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe195() { 
+                                                
+                          if (Eintrag195.value=="552,8") {alert("Richtig"); document.getElementById("Pruef195").disabled= true;
+                          }  
+                           
+                          else if (Eintrag195.value!=="552,8" && Eintrag195.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag195").value="552,8"; window.open('Pot_Aufgabe195.html');           
+                          document.getElementById("Pruef195").disabled= true;}
+                               
+                          else if (Eintrag195.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 196-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 196
+
+Jod 131 hat eine Halbwertszeit von 8 Tagen, 
+das heißt, die Strahlung ist auf die Hälfte gefallen. 
+Wie hoch ist der Abnahmefaktor pro Tag? 
+Nach wie viel Tagen beträgt die Strahlungsstärke noch 1 %? </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe196.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 197-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 197
+
+Cadmium wird durch die Nahrung aufgenommen und 
+hat in einem menschlichen Körper eine Halbwertszeit 
+von 19 Jahren. 
+Wie hoch ist die prozentuale Abnahme pro Jahr? 
+Um wie viel Prozent hat die Menge nach 
+10 Jahren abgenommen?  </strong>
+
+Um <input type="text" id="Eintrag197" maxlength="4" size="1" style= background-color:yellow ></input> % <button id="Pruef197" onclick="Aufgabe197()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe197() { 
+                                                
+                          if (Eintrag196.value=="30,7") {alert("Richtig"); document.getElementById("Pruef197").disabled= true;
+                          }  
+                           
+                          else if (Eintrag197.value!=="30,7" && Eintrag197.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag197").value="30,7"; window.open('Pot_Aufgabe197.html');           
+                          document.getElementById("Pruef197").disabled= true;}
+                               
+                          else if (Eintrag197.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 198-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 198
+
+Das Alter von Holz kann man durch die Aktivität 
+von Kohlenstoffatomen im Holz bestimmen. 
+Wie alt ist ein Holz, das noch eine Aktivität 
+von 13% hat, wenn die Halbwertszeit des Kohlenstoffs 
+6 000 Jahre beträgt?  </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe198.html');" >Lösung</button></p></pre> 
+                      
+<!--//Aufgabe 199-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 199
+
+Auf einem Sparbuch sind 250 € zu einem Zinssatz 
+von 3,5 % angelegt. 
+Wie viel € sind nach 5 Jahren angespart? 
+Nach wie viel Jahren sind 500 € angespart? 
+Mit welchem Zinssatz wären nach 5 Jahren 
+500 € angespart?   </strong>
+
+Mit <input type="text" id="Eintrag199" maxlength="4" size="1" style= background-color:yellow ></input> % <button id="Pruef199" onclick="Aufgabe199()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe199() { 
+                                                
+                          if (Eintrag199.value=="14,9") {alert("Richtig"); document.getElementById("Pruef199").disabled= true;
+                          }  
+                           
+                          else if (Eintrag199.value!=="14,9" && Eintrag199.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag199").value="14,9"; window.open('Pot_Aufgabe199.html');           
+                          document.getElementById("Pruef199").disabled= true;}
+                               
+                          else if (Eintrag199.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 200-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 200
+
+Eine Prognose sagt aus, dass die Einwohnerzahl 
+einer Stadt von heute 240 000 Einwohnern in den 
+nächsten 5 Jahren jährlich um 2,5 % zunimmt. 
+Wie viel Einwohner sind es in 5 Jahren? 
+In wie viel Jahren würde sich, bei gleichem Zuwachs, 
+die Einwohnerzahl verdoppeln?   </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe200.html');" >Lösung</button></p></pre>   
+                      
+<!--//Aufgabe 201-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 201
+
+In einer ländlichen Region mit 175 000 Einwohnern 
+nimmt die Einwohnerzahl jährlich um 1,5% ab. 
+Wie viel Einwohner hat die Region in 5 Jahren? 
+In wie viel Jahren hätte sich, bei gleicher Abnahme, 
+die Einwohnerzahl halbiert?  </strong>
+
+In <input type="text" id="Eintrag201" maxlength="2" size="1" style= background-color:yellow ></input> Jahren <button id="Pruef201" onclick="Aufgabe201()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe201() { 
+                                                
+                          if (Eintrag201.value=="46") {alert("Richtig"); document.getElementById("Pruef201").disabled= true;
+                          }  
+                           
+                          else if (Eintrag201.value!=="46" && Eintrag201.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag201").value="46"; window.open('Pot_Aufgabe201.html');           
+                          document.getElementById("Pruef201").disabled= true;}
+                               
+                          else if (Eintrag201.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 202-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 202
+
+Ein radioaktiver Stoff hat eine Halbwertszeit 
+von 22 Minuten. Nach wie viel Minuten hat seine 
+Strahlung auf 10% abgenommen? </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe202.html');" >Lösung</button></p></pre>   
+                      
+<!--//Aufgabe 203-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 203
+
+Die Strahlung eines radioaktiven Stoffes hat 
+sich in 10 Jahren um 8% verringert. 
+Welche Halbwertszeit hat der Stoff?    </strong>
+
+Es sind <input type="text" id="Eintrag203" maxlength="2" size="1" style= background-color:yellow ></input> Jahre. <button id="Pruef203" onclick="Aufgabe203()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe203() { 
+                                                
+                          if (Eintrag203.value=="84") {alert("Richtig"); document.getElementById("Pruef203").disabled= true;
+                          }  
+                           
+                          else if (Eintrag203.value!=="84" && Eintrag203.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag203").value="84"; window.open('Pot_Aufgabe203.html');           
+                          document.getElementById("Pruef203").disabled= true;}
+                               
+                          else if (Eintrag203.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 204-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 204
+
+Ein Preisausschreiben stellt für die Gewinner 
+2 Varianten zur Auswahl. 
+Variante 1: 
+Der Gewinner erhält 3 Jahre lang jeden Monat 1 050 €. 
+Variante 2: 
+Einmalige Zahlung von 1 000 €, dann 3 Jahre 
+lang eine monatliche Verzinsung von 13%. 
+Wie hoch ist der Unterschied der Gewinnsummen 
+nach 3 Jahren?  </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe204.html');" >Lösung</button></p></pre>   
+
+
+<!--//Aufgabe 205-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 205
+
+Im Jahr 2 000 gab es 308 Millionen Internetnutzer, 
+2001 sind es 492,8 Millionen. 
+In welchem Jahr waren es 4 Millionen bei 
+linearer Zunahme?</strong>   Im Jahr <input type="text" id="Eintrag205" maxlength="4" size="1" style= background-color:yellow ></input> . <button id="Pruef205" onclick="Aufgabe205()">Prüfen</button> 
+<strong>Wie viel Nutzer sind es im Jahr 2003 bei 
+exponentieller Zunahme?   </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe205() { 
+                                                
+                          if (Eintrag205.value=="1998") {alert("Richtig"); document.getElementById("Pruef205").disabled= true;
+                          }  
+                           
+                          else if (Eintrag205.value!=="1998" && Eintrag205.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag205").value="1998"; window.open('Pot_Aufgabe205.html');           
+                          document.getElementById("Pruef205").disabled= true;}
+                               
+                          else if (Eintrag205.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 206-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 206
+
+Ein Taucher misst in einer Tiefe von 1 m einen 
+Druck von 1 100 hPa und eine Helligkeit von 27,5 lux, 
+in 2 m Tiefe misst er 1 200 hPa und 15,1 lux, 
+in 3 m Tiefe 1 300 hPa und 8,3 lux. 
+Welcher Druck und welche Helligkeit ist in einer 
+Tiefe von 15 m zu erwarten?   </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe206.html');" >Lösung</button></p></pre>   
+
+
+<!--//Aufgabe 207-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 207
+
+10 000 € sind für 8 Jahre zu einem Zinssatz 
+von 7% fest angelegt. 
+Wie viel € sind es nach 8 Jahren?</strong>  Es sind <input type="text" id="Eintrag207" maxlength="8" size="4" style= background-color:yellow ></input> €. <button id="Pruef207" onclick="Aufgabe207()">Prüfen</button> 
+<strong>Auf wie viel € wächst das Kapital nach 8 Jahren 
+bei einfacher Verzinsung, kein Zinseszins?  </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe207() { 
+                                                
+                          if (Eintrag207.value=="17181,86") {alert("Richtig"); document.getElementById("Pruef207").disabled= true;
+                          }  
+                           
+                          else if (Eintrag207.value!=="17181,86" && Eintrag207.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag207").value="17181,869"; window.open('Pot_Aufgabe207.html');           
+                          document.getElementById("Pruef207").disabled= true;}
+                               
+                          else if (Eintrag207.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 208-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 208
+
+Ein Wald besteht heute aus 60 000 Festmetern Holz. 
+Welchen Zuwachs kann man heute schlagen, 
+wenn er jährlich 3% betrug und 12 Jahre kein 
+Holz geschlagen wurde? 
+Wie viel Bäume sind das, 
+wenn jeder Baum 1,8 fm Raum einnimmt? </strong>
+
+<button  onclick="window.open('Pot_Aufgabe208.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 209-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 209
+
+1 l Kuhmilch enthält 2 Stunden nach dem 
+Melken 9 000 Keime, nach 3 Stunden sind es 32 000. 
+Wie viel Keime waren es nach 2,5 Stunden?</strong>   
+Es waren <input type="text" id="Eintrag209" maxlength="5" size="2" style= background-color:yellow ></input> Keime. <button id="Pruef209" onclick="Aufgabe209()">Prüfen</button> 
+<strong>Wie viele waren es zu Beginn?  </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe209() { 
+                                                
+                          if (Eintrag209.value=="16978") {alert("Richtig"); document.getElementById("Pruef209").disabled= true;
+                          }  
+                           
+                          else if (Eintrag209.value!=="16978" && Eintrag209.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag209").value="16978"; window.open('Pot_Aufgabe209.html');           
+                          document.getElementById("Pruef209").disabled= true;}
+                               
+                          else if (Eintrag209.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 210-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 210
+
+In Europa lebten 1979 746 Millionen Menschen, 
+in Afrika 456 Mio. Bis zum Jahr 2 000 sollte 
+Afrika um 2,9% und Europa um 0,,4% jährlich wachsen. 
+Nach wie viel Jahren lebten dann in Afrika gleich 
+viel Menschen wie in Europa?   </strong>
+
+<button  onclick="window.open('Pot_Aufgabe210.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 211-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 211
+
+Eine Maschine kostet 400 000 €, sie wird jährlich 
+mit 15% abgeschrieben. Welchen Wert hat die Maschine 
+nach 10 Jahren?
+Nach wie viel Jahren ist sie noch 50 000 € wert?  </strong>
+
+Nach <input type="text" id="Eintrag211" maxlength="2" size="1" style= background-color:yellow ></input> Jahren. <button id="Pruef211" onclick="Aufgabe211()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe211() { 
+                                                
+                          if (Eintrag211.value=="13") {alert("Richtig"); document.getElementById("Pruef211").disabled= true;
+                          }  
+                           
+                          else if (Eintrag211.value!=="13" && Eintrag211.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag211").value="13"; window.open('Pot_Aufgabe211.html');           
+                          document.getElementById("Pruef211").disabled= true;}
+                               
+                          else if (Eintrag211.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 212-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 212
+
+1974 betrug der Bleibedarf 3,39 Millionen t. 
+Bei gleich bleibendem Bedarf sollte der Vorrat 
+bis 2021 reichen. Wie groß war der Bleivorrat?
+Wie lange reicht der Vorrat, wenn man von einem 
+jährlichen Bedarfszuwachs von 3% ausgeht? 
+Wie lange reicht er bei einem Zuwachs von 3%, 
+wenn 40% des Bedarfs durch Wiederverwendung 
+gedeckt werden?   </strong>
+
+<button  onclick="window.open('Pot_Aufgabe212.html');" >Lösung</button></p></pre>  
+
+<!--//Aufgabe 213-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 213
+
+Der prozentuale Anteil von Kohlenstoff C-14 im 
+Holz wird dazu benutzt, dessen Alter zu bestimmen. 
+C-14 hat eine Halbwertszeit von 5 570 Jahren. 
+Wie alt ist ein Holz, wenn noch 70% C-14 vorhanden sind?   </strong>
+
+Es ist <input type="text" id="Eintrag213" maxlength="6" size="2" style= background-color:yellow ></input> Jahre alt. <button id="Pruef213" onclick="Aufgabe213()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe213() { 
+                                                
+                          if (Eintrag213.value=="2978,8") {alert("Richtig"); document.getElementById("Pruef213").disabled= true;
+                          }  
+                           
+                          else if (Eintrag213.value!=="2978,8" && Eintrag213.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag213").value="2978,8"; window.open('Pot_Aufgabe213.html');           
+                          document.getElementById("Pruef213").disabled= true;}
+                               
+                          else if (Eintrag213.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 214-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 214
+
+Ein See ist 1 200 m² groß und wird jede Woche 
+um 700 m² vergrößert. Zu Beginn wird eine Fläche 
+von 1 m² durch Algen bedeckt. Sie verdreifacht 
+sich jede Woche. 
+Nach wie viel Wochen ist der See mit Algen bedeckt?      </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe214.html');" >Lösung</button></p></pre>  
+
+<!--//Aufgabe 215-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 215
+
+Eine Jugendliche soll einen Zuschuss für einen 
+Einkauf bekommen. Sie hat 2 Varianten zur Auswahl. 
+Variante 1: 
+10 € sofort und 14 Tage lang jeden Tag 2 € dazu. 
+Variante 2: 
+2 Cent sofort und 14 Tage lang jeden Tag den 
+Betrag verdoppelt. 
+Wie hoch ist der höchste Betrag?  </strong>
+
+Es sind <input type="text" id="Eintrag215" maxlength="6" size="2" style= background-color:yellow ></input> €. <button id="Pruef215" onclick="Aufgabe215()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe215() { 
+                                                
+                          if (Eintrag215.value=="327,68") {alert("Richtig"); document.getElementById("Pruef215").disabled= true;
+                          }  
+                           
+                          else if (Eintrag215.value!=="327,68" && Eintrag215.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag215").value="327,68"; window.open('Pot_Aufgabe215.html');           
+                          document.getElementById("Pruef215").disabled= true;}
+                               
+                          else if (Eintrag215.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 216-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 216
+
+4 000 € sind nach einem Jahr auf 4 120 €, 
+nach 2 Jahren auf 4 243,60 € angewachsen. 
+Wie viel € sind es, bei gleich bleibendem 
+Zuwachs, in 10 Jahren?    </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe216.html');" >Lösung</button></p></pre>  
+
+<!--//Aufgabe 217-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 217
+
+Nach einer Feier hat ein Teilnehmer 2,3 Promille 
+im Blut. Der Alkohol wird um 0,2 Promille 
+pro Stunde abgebaut. Nach wie viel Stunden hat er 
+noch 0,8 Promille im Blut?   </strong>
+
+Nach <input type="text" id="Eintrag217" maxlength="3" size="1" style= background-color:yellow ></input> Stunden. <button id="Pruef217" onclick="Aufgabe217()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe217() { 
+                                                
+                          if (Eintrag217.value=="7,5") {alert("Richtig"); document.getElementById("Pruef217").disabled= true;
+                          }  
+                           
+                          else if (Eintrag217.value!=="7,5" && Eintrag217.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag217").value="7,5"; window.open('Pot_Aufgabe217.html');           
+                          document.getElementById("Pruef217").disabled= true;}
+                               
+                          else if (Eintrag217.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 218-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 218
+
+Ein Patient muss 6 mg eines Medikaments einnehmen, 
+das sich täglich um 35% abbaut. Nach wie viel Tagen 
+sind noch 2 mg im Körper des Patienten? 
+Wie viel mg sind noch nach 4 Tagen vorhanden?  </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe218.html');" >Lösung</button></p></pre>  
+
+<!--//Aufgabe 219-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 219
+
+Ein radioaktiver Stoff ist nach 948 Jahren 
+auf 70% seiner ursprünglichen Masse zerfallen. 
+In wie viel Jahren ist er auf die Hälfte zerfallen?     </strong>
+
+Nach <input type="text" id="Eintrag219" maxlength="4" size="1" style= background-color:yellow ></input> Jahren. <button id="Pruef219" onclick="Aufgabe219()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe219() { 
+                                                
+                          if (Eintrag219.value=="1771") {alert("Richtig"); document.getElementById("Pruef219").disabled= true;
+                          }  
+                           
+                          else if (Eintrag219.value!=="1771" && Eintrag219.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag219").value="1771"; window.open('Pot_Aufgabe219.html');           
+                          document.getElementById("Pruef219").disabled= true;}
+                               
+                          else if (Eintrag219.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 220-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 220
+
+a) Maschinen verlieren jedes Jahr an Wert. 
+Welchen Wert hat eine Maschine, die 40 000 € 
+gekostet hat, nach 4 Jahren, wenn sie jährlich 
+10% ihres ursprünglichen Wertes verliert? 
+Welchen Wert hat sie, wenn sie jedes Jahr 30% 
+des Zeitwertes verliert? 
+b) Die Maschine soll in 11 Jahren abgeschrieben 
+sein (Buchwert 0). 
+Die ersten 7 Jahre soll der Verlust 20% vom Zeitwert 
+(degressive Abschreibung) betragen und danach gleich 
+bleiben (lineare Abschreibung). 
+Wie hoch ist der Wert nach 7 Jahren? 
+Wie hoch nach 10 Jahren?   </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe220.html');" >Lösung</button></p></pre>  
+
+
+<!--//Aufgabe 221-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 221
+
+Nach jeder Minute zerfällt eine Substanz 
+von 9 mg um 30%.
+Wie viel ist noch nach 5 Minuten vorhanden?</strong>
+Noch <input type="text" id="Eintrag221" maxlength="3" size="1" style= background-color:yellow ></input> mg. <button id="Pruef221" onclick="Aufgabe221()">Prüfen</button>        
+<strong>Nach wie viel Minuten sind es noch 1 mg?  </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe221() { 
+                                                
+                          if (Eintrag221.value=="1,5") {alert("Richtig"); document.getElementById("Pruef221").disabled= true;
+                          }  
+                           
+                          else if (Eintrag221.value!=="1,5" && Eintrag221.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag221").value="1,5"; window.open('Pot_Aufgabe221.html');           
+                          document.getElementById("Pruef221").disabled= true;}
+                               
+                          else if (Eintrag221.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 222-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 222
+
+Die Stärke eines Lichtstrahls nimmt beim Eindringen 
+in eine Flüssigkeit pro cm um 35% ab. 
+Welche Stärke hat er in 4 cm Tiefe? 
+In welcher Tiefe ist seine Intensität noch 1%? </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe222.html');" >Lösung</button></p></pre>  
+
+<!--//Aufgabe 223-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 223
+
+Auf welchen Betrag wächst ein Kapital an, 
+wenn 7 Jahre lang zu Beginn eines Jahres 
+3 500 € eingezahlt werden und der Zinssatz 
+5,75% beträgt?   </strong>
+
+Auf <input type="text" id="Eintrag223" maxlength="8" size="4" style= background-color:yellow ></input> €. <button id="Pruef223" onclick="Aufgabe223()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe223() { 
+                                                
+                          if (Eintrag223.value=="30831,81") {alert("Richtig"); document.getElementById("Pruef223").disabled= true;
+                          }  
+                           
+                          else if (Eintrag223.value!=="30831,81" && Eintrag223.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag223").value="7,7"; window.open('Pot_Aufgabe223.html');           
+                          document.getElementById("Pruef223").disabled= true;}
+                               
+                          else if (Eintrag223.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 224-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 224
+
+Nach wie viel Jahren ist ein Kredit von 45 000 € 
+zurückgezahlt, wenn der Zinssatz 6,75% beträgt 
+und jeweils zu Beginn eines Jahres 6 300 € 
+zurückgezahlt werden? 
+Wie hoch ist die Restschuld?   </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe224.html');" >Lösung</button></p></pre>  
+
+
+<!--//Aufgabe 225-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 225
+
+Ein Holzbestand von 50 000 fm würde ohne Umwelteinflüsse 
+jährlich um 3,5%, wachsen, tatsächlich wächst er nur 
+noch um 2,5%. Wie hoch ist der finanzielle Verlust, wenn 
+der Zuwachs nach 20 Jahren geschlagen und für 85 € pro fm 
+verkauft wird?  </strong>
+
+<input type="text" id="Eintrag225" maxlength="7" size="3" style= background-color:yellow ></input> € <button id="Pruef225" onclick="Aufgabe225()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe225() { 
+                                                
+                          if (Eintrag225.value=="1492481") {alert("Richtig"); document.getElementById("Pruef225").disabled= true;
+                          }  
+                           
+                          else if (Eintrag225.value!=="1492481" && Eintrag225.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag225").value="1492481"; window.open('Pot_Aufgabe225.html');           
+                          document.getElementById("Pruef225").disabled= true;}
+                               
+                          else if (Eintrag225.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 226-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 226
+
+Verbindet man die Seitenmitten eines Quadrates 
+miteinander, so entsteht ein neues Quadrat. 
+Wie groß ist das 10 te so entstehende Quadrat, 
+wenn das ursprüngliche 3 dm² groß ist?     </strong> 
+
+<button  onclick="window.open('Pot_Aufgabe226.html');" >Lösung</button></p></pre>  
+
+<!--//Aufgabe 227-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 227
+
+Der Temperaturunterschied zwischen einem Joghurt 
+aus dem Kühlschrank mit 6° und der Umgebungstemperatur 
+beträgt 15°. Er nimmt pro Minute auf 4/10 des 
+Ausgangswertes ab. Nach wie viel Minuten ist der 
+Unterschied kleiner als 0,01°? 
+Welche Temperatur hat der Joghurt nach 4 Minuten? </strong>
+
+<input type="text" id="Eintrag227" maxlength="4" size="1" style= background-color:yellow ></input> Grad <button id="Pruef227" onclick="Aufgabe227()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe227() { 
+                                                
+                          if (Eintrag227.value=="20,6") {alert("Richtig"); document.getElementById("Pruef227").disabled= true;
+                          }  
+                           
+                          else if (Eintrag227.value!=="20,6" && Eintrag227.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag227").value="20,6"; window.open('Pot_Aufgabe227.html');           
+                          document.getElementById("Pruef227").disabled= true;}
+                               
+                          else if (Eintrag227.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 228-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 228
+
+Ein Freibad musste geschlossen werden, weil die 
+Verunreinigung 135 ppm überschritt. Wie viel Wochen 
+dauert es, bis sie auf die Hälfte zurückgegangen ist, 
+wenn sie wöchentlich um 10% abgebaut wird? 
+Nach wie viel Wochen ist der gesetzliche Grenzwert 
+von 25 ppm erreicht?     </strong>  
+
+<button  onclick="window.open('Pot_Aufgabe228.html');" >Lösung</button></p></pre>  
+
+
+<!--//Aufgabe 229-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 229
+
+Nach wie viel Jahren sind auf einem Ratenspar- 
+vertrag 10 000 €, wenn jeweils zu Beginn im ersten 
+Jahr 5 000 € und in den nächsten Jahren 450 € zu 
+einem Zinssatz von 5,25% eingezahlt werden?     </strong>
+
+Nach <input type="text" id="Eintrag229" maxlength="1" size="1" style= background-color:yellow ></input> Jahren. <button id="Pruef229" onclick="Aufgabe229()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe229() { 
+                                                
+                          if (Eintrag229.value=="7") {alert("Richtig"); document.getElementById("Pruef229").disabled= true;
+                          }  
+                           
+                          else if (Eintrag229.value!=="7" && Eintrag229.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag229").value="7"; window.open('Pot_Aufgabe229.html');           
+                          document.getElementById("Pruef229").disabled= true;}
+                               
+                          else if (Eintrag229.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 230-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 230
+
+Wie viel müsste zu Beginn eines jeden Jahres 
+eingezahlt werden, wenn nach 4 Jahren 12 000 € 
+bei 5,25% angespart sein sollen?  </strong>  
+
+<button  onclick="window.open('Pot_Aufgabe230.html');" >Lösung</button></p></pre>  
+
+
+<!--//Aufgabe 231-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 231
+
+Nach wie viel Jahren würde eine Tierpopulation 
+von 2 500 Tieren ausgerottet sein, wenn sie zwar 
+jährlich um 7,5% zunimmt, aber 250 Tiere jährlich 
+durch Bejagung verloren gehen?          </strong>
+
+Nach <input type="text" id="Eintrag231" maxlength="2" size="1" style= background-color:yellow ></input> Jahren. <button id="Pruef231" onclick="Aufgabe231()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe231() { 
+                                                
+                          if (Eintrag231.value=="20") {alert("Richtig"); document.getElementById("Pruef231").disabled= true;
+                          }  
+                           
+                          else if (Eintrag231.value!=="20" && Eintrag231.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag231").value="20"; window.open('Pot_Aufgabe231.html');           
+                          document.getElementById("Pruef231").disabled= true;}
+                               
+                          else if (Eintrag231.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 232-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 232
+
+Nach wie viel Wochen befinden sich 15 kg eines 
+Unkrautvernichtungsmittels auf einem Acker, 
+wenn wöchentlich 5 kg aufgebracht werden, 
+aber die Menge in derselben Zeit durch 
+Witterungseinflüsse um 31,5% abnimmt?     </strong>  
+
+<button  onclick="window.open('Pot_Aufgabe232.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 233-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 233
+
+Von täglich 2 mg eines Medikaments werden 20% 
+ausgeschieden. 
+Am wievielten Tag hat ein Patient 9,9 mg im Körper?   </strong>
+
+Am <input type="text" id="Eintrag233" maxlength="2" size="1" style= background-color:yellow ></input>. Tag <button id="Pruef233" onclick="Aufgabe233()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe233() { 
+                                                
+                          if (Eintrag233.value=="20") {alert("Richtig"); document.getElementById("Pruef233").disabled= true;
+                          }  
+                           
+                          else if (Eintrag233.value!=="20" && Eintrag233.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag233").value="20"; window.open('Pot_Aufgabe233.html');           
+                          document.getElementById("Pruef233").disabled= true;}
+                               
+                          else if (Eintrag233.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 234-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 234
+
+Eine Seerose bedeckt eine Fläche von 1 m², die 
+sich alle 10 Tage verdoppelt. 
+Wie groß ist die Wasserfläche, wenn sie nach 
+200 Tagen zu 50% bedeckt ist? 
+Nach wie viel Tagen ist die Fläche zugewachsen?          </strong>  
+
+<button  onclick="window.open('Pot_Aufgabe234.html');" >Lösung</button></p></pre> 
+
+
+<!--//Aufgabe 235-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 235
+
+Cholerabazillen vermehren sich exponentiell. 
+Aus 400 sind nach 1 Stunde 3 600 geworden. 
+Wie viel sind es nach 10 Stunden?
+Nach wie viel Sunden hat sich deren Anzahl verdoppelt?       </strong>
+
+Nach <input type="text" id="Eintrag235" maxlength="5" size="2" style= background-color:yellow ></input> Stunden. <button id="Pruef235" onclick="Aufgabe235()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe235() { 
+                                                
+                          if (Eintrag235.value=="0,315") {alert("Richtig"); document.getElementById("Pruef235").disabled= true;
+                          }  
+                           
+                          else if (Eintrag235.value!=="0,315" && Eintrag235.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag235").value="0,315"; window.open('Pot_Aufgabe235.html');           
+                          document.getElementById("Pruef235").disabled= true;}
+                               
+                          else if (Eintrag235.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 236-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 236
+
+Raucher riskieren Lungenkrebs. Schafft man es, 
+aufzuhören, wird das Risiko zu erkranken mit 
+den Jahren immer kleiner. Risikotabelle:
+Jahre             0       2      4      6      8    10    12     
+Risiko in %      38      30     22     17     13    10     7,7
+Nach wie viel Jahren ist das Risiko auf 10% des 
+ursprünglichen gesunken? </strong> 
+                        
+<button  onclick="window.open('Pot_Aufgabe236.html');" >Lösung</button></p></pre> 
+
+
+<!--//Aufgabe 237-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 237
+
+Ein Bienenvolk ist innerhalb einer Woche von 
+50 000 Bienen auf 40 000 zurückgegangen. 
+Nach wie viel Wochen ist die Population bei 
+exponentieller Abnahme nur noch halb so groß?</strong>
+Nach <input type="text" id="Eintrag237" maxlength="3" size="1" style= background-color:yellow ></input> Wochen. <button id="Pruef237" onclick="Aufgabe237()">Prüfen</button> 
+<strong>In welcher Woche stirbt die letzte Biene?      </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe237() { 
+                                                
+                          if (Eintrag237.value=="3,1") {alert("Richtig"); document.getElementById("Pruef237").disabled= true;
+                          }  
+                           
+                          else if (Eintrag237.value!=="3,1" && Eintrag237.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag237").value="3,1"; window.open('Pot_Aufgabe237.html');           
+                          document.getElementById("Pruef237").disabled= true;}
+                               
+                          else if (Eintrag237.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 238-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 238
+
+Vor wie viel Jahren betrug ein Kapital 15 000 €, 
+wenn es heute auf 20 000 € bei einem Zinssatz 
+von 5% angewachsen ist? Ab welchem Jahr nimmt 
+das Kapital um 2 000 € jährlich zu?   </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe238.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 239-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 239
+
+Eine Firma hat einen Umsatz von 300 Millionen €, 
+im Jahr darauf einen von 375 Millionen. Welcher 
+Umsatz ist in 3 Jahren zu erwarten, wenn der 
+prozentuale Zuwachs gleich bleibt? </strong>
+Es sind <input type="text" id="Eintrag239" maxlength="5" size="2" style= background-color:yellow ></input> zu erwarten. <button id="Pruef239" onclick="Aufgabe239()">Prüfen</button>
+<strong>Nach wie viel Jahren überschreitet der Umsatz 650 Mio €?     </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe239() { 
+                                                
+                          if (Eintrag239.value=="585,9") {alert("Richtig"); document.getElementById("Pruef239").disabled= true;
+                          }  
+                           
+                          else if (Eintrag239.value!=="585,9" && Eintrag239.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag239").value="585,9"; window.open('Pot_Aufgabe239.html');           
+                          document.getElementById("Pruef239").disabled= true;}
+                               
+                          else if (Eintrag239.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 240-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 240
+
+Ein Erbe beträgt 23 965,58 €, nachdem das Geld 
+vor 15 Jahren zu 6% angelegt wurde. 
+Welcher Betrag wurde angelegt? 
+Nach wie viel Jahren sind es 30 000 €?   </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe240.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 241-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 241
+
+a) Ein Betrieb hat seinen Umsatz in 5 Jahren 
+auf 4 Millionen € verdoppelt. 
+Wie groß ist der Wachstumsfaktor q?</strong> 
+q = <input type="text" id="Eintrag241" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef241" onclick="Aufgabe241()">Prüfen</button>
+<strong>b) Nach wie viel Jahren hat sich der Umsatz 
+des Betriebes von 60 Mio bei einem jährlichen 
+prozentualen Wachstum von 9,5% auf 200 Mio gesteigert?  </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe241() { 
+                                                
+                          if (Eintrag241.value=="1,149") {alert("Richtig"); document.getElementById("Pruef241").disabled= true;
+                          }  
+                           
+                          else if (Eintrag241.value!=="1,149" && Eintrag241.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag241").value="1,149"; window.open('Pot_Aufgabe241.html');           
+                          document.getElementById("Pruef241").disabled= true;}
+                               
+                          else if (Eintrag241.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 242-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 242
+
+Der Geldwertverlust in einem Land beträgt 4%. 
+Nach wie viel Jahren hat sich der ursprüngliche 
+Geldwert halbiert?     </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe242.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 243-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 243
+
+2 Personen kennen eine Neuigkeit. Sie verbreitet 
+sich in einer Stadt so, dass die Anzahl der 
+'Mitwisser' wöchentlich um 20% zunimmt. Nach wie 
+viel Wochen hat sich die Neuigkeit in einer 
+Stadt von 80 000 Einwohnern verbreitet?      </strong>
+
+Nach <input type="text" id="Eintrag243" maxlength="4" size="1" style= background-color:yellow ></input> Wochen. <button id="Pruef243" onclick="Aufgabe243()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe243() { 
+                                                
+                          if (Eintrag243.value=="58,1") {alert("Richtig"); document.getElementById("Pruef243").disabled= true;
+                          }  
+                           
+                          else if (Eintrag243.value!=="58,1" && Eintrag243.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag243").value="58,1"; window.open('Pot_Aufgabe243.html');           
+                          document.getElementById("Pruef243").disabled= true;}
+                               
+                          else if (Eintrag243.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 244-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 244
+
+Der Wirkstoff einer Tablette baut sich im Körper 
+exponentiell ab. So befinden sich 10 Stunden nach 
+der Einnahme einer 0,5 g Tablette noch 0,09 g im 
+Körper. Wie viel g befinden sich um 20.00 noch im 
+Körper, wenn jemand um 9.00 eine und um 15.00 zwei 
+weitere einnimmt?    </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe244.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 245-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 245
+
+Die Temperatur einer Tasse Kaffee von 50° kühlt 
+jede Minute um 2,7% ab. Nach wie viel Minuten 
+beträgt ihre Temperatur 40°? Um wie viel Grad ist 
+ihre Temperatur in den ersten 10 Minuten gesunken?      </strong>
+
+Um <input type="text" id="Eintrag245" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef245" onclick="Aufgabe245()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe245() { 
+                                                
+                          if (Eintrag245.value=="12") {alert("Richtig"); document.getElementById("Pruef245").disabled= true;
+                          }  
+                           
+                          else if (Eintrag245.value!=="12" && Eintrag245.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag245").value="12"; window.open('Pot_Aufgabe245.html');           
+                          document.getElementById("Pruef245").disabled= true;}
+                               
+                          else if (Eintrag245.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 246-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 246
+
+Der globale Wasserverbrauch ist unten dargestellt:
+Jahr                     1900   1920    1940   1960   1980   2000
+Verbrauch in km³/Jahr     550     50    1100   2100   3250   5100 
+Nach wie viel Jahren wurde ein Verbrauch von 3 000 km³ erreicht?    </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe246.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 247-->
+
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 247
+
+Ein Computervirus verbreitet sich exponentiell 
+und zwar nimmt die Anzahl der infizierten Computer 
+um 27% pro Stunde zu. 
+Im Moment sind 4 498 Computer betroffen. 
+Vor wie viel Stunden wurde der 5. Computer infiziert?      </strong>
+
+Vor <input type="text" id="Eintrag247" maxlength="4" size="1" style= background-color:yellow ></input> Stunden. <button id="Pruef247" onclick="Aufgabe247()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe247() { 
+                                                
+                          if (Eintrag247.value=="28,9") {alert("Richtig"); document.getElementById("Pruef247").disabled= true;
+                          }  
+                           
+                          else if (Eintrag247.value!=="28,9" && Eintrag247.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag247").value="28,9"; window.open('Pot_Aufgabe247.html');           
+                          document.getElementById("Pruef247").disabled= true;}
+                               
+                          else if (Eintrag247.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 248-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 248
+
+Jedes Medikament hat eine Langzeitwirkung, die 
+man so bestimmt, indem man seine Konzentration 
+im Blut über Tage misst. Der Patient hat 70 mg 
+eingenommen, das entspricht einer Konzentration 
+von 10 mg/l.. Nach einem Tag konnte man noch 
+7,2 mg/l, nach 2 Tagen noch 5,18 mg/l im Blut 
+feststellen. Nach wie viel Tagen ist die 
+Konzentration unter 0,5 mg/l gesunken?         </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe248.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 249-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 249
+
+In einem Labor züchtet man Bakterien. Zu Beginn 
+sind 7,1 Millionen vorhanden. Nach 4 Stunden 
+sind es 9,7 Mio, nach 6 Stunden 11,3 Mio. 
+Wie viel Bakterien sind es nach 2,5 Stunden?</strong> 
+Es sind <input type="text" id="Eintrag249" maxlength="4" size="1" style= background-color:yellow ></input> Mio <button id="Pruef249" onclick="Aufgabe249()">Prüfen</button>
+<strong>Wie viele sind es 1 Stunde vor Beginn der Beobachtung?           </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe249() { 
+                                                
+                          if (Eintrag249.value=="8,63") {alert("Richtig"); document.getElementById("Pruef249").disabled= true;
+                          }  
+                           
+                          else if (Eintrag249.value!=="8,63" && Eintrag249.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag249").value="8,63"; window.open('Pot_Aufgabe249.html');           
+                          document.getElementById("Pruef249").disabled= true;}
+                               
+                          else if (Eintrag249.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 250-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 250
+
+Bei dem Unglück von Tschernobyl wurde radioaktives 
+Material freigesetzt, von dem in jedem Jahr 2,3% 
+seiner Masse zerfällt. 
+Wie viel Prozent sind 24 Jahre nach dem Unglück noch 
+vorhanden? 
+Nach wie viel Jahren ist es auf die Hälfte zerfallen?             </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe250.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 251-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 251
+
+Auf welchen Betrag sind umgerechnet 100 € angewachsen,
+wenn sie am 1. 1. 1950 zu 5% angelegt und am 1. 1. 2010 
+abgehoben werden?</strong> Auf <input type="text" id="Eintrag251" maxlength="7" size="3" style= background-color:yellow ></input> € <button id="Pruef251" onclick="Aufgabe251()">Prüfen</button>
+<strong>Wie viel € sind am 1. 4. 2005 auf dem Sparbuch?               </strong></p></pre>  
+
+                      <script>
+                        function Aufgabe251() { 
+                                                
+                          if (Eintrag251.value=="1867,92") {alert("Richtig"); document.getElementById("Pruef251").disabled= true;
+                          }  
+                           
+                          else if (Eintrag251.value!=="1867,92" && Eintrag251.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag251").value="1867,92"; window.open('Pot_Aufgabe251.html');           
+                          document.getElementById("Pruef251").disabled= true;}
+                               
+                          else if (Eintrag251.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 252-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 252
+
+2010 wurde angenommen, dass die Weltbevölkerung 
+in 11 Monaten um 80 Millionen bei einer Wachstumsrate 
+von jährlich 1,26% zunimmt.  
+Wie groß war sie Anfang 2010? 
+Nach wie viel Jahren hat die Bevölkerung ab 2000 
+um 80 Mio zugenommen? 
+In welchem Jahr nimmt sie in 9 Monaten um 80 Mio zu?      </strong> 
+     
+<button  onclick="window.open('Pot_Aufgabe252.html');" >Lösung</button></p></pre> 
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>       
