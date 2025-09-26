@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potenzen, Wurzeln, Logarithmen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 248
+
+Jedes Medikament hat eine Langzeitwirkung, die man so bestimmt, 
+indem man seine Konzentration im Blut über Tage misst. 
+Der Patient hat 70 mg eingenommen, das entspricht einer 
+Konzentration von 10 mg/l.
+Nach einem Tag konnte man noch 7,2 mg/l, nach 2 Tagen noch 
+5,18 mg/l im Blut feststellen. 
+Nach wie viel Tagen ist die Konzentration unter 0,5 mg/l gesunken?  
+ 
+Die Abnahme ist exponentiell, 
+da die Konzentration nicht gleichmäßig abnimmt. 
+ 
+K<sub>2</sub> = K<sub>0</sub> * q<sup>2</sup> 
+ 
+5,18 mg/l = 10 mg/l * q<sup>2</sup> |:10 
+ 
+ 5,18 
+------ = q<sup>2</sup> |√ 
+  10
+<img src="Aufgabe248.jpg">
+ 
+K<sub>n</sub> = K<sub>0</sub> * q<sup>n</sup> 
+ 
+0,5 mg/l = 10 mg/l * 0,72<sup>n</sup> | :10 
+ 
+ 0,5 
+----- = 0,72<sup>n</sup> 
+ 10 
+ 
+Logarithmieren: 
+ 
+     0,5 
+lg ------ = lg 0,72<sup>n</sup> 
+     10 
+ 
+lg 0,05 = n * lg 0,72 | :lg 0,72 
+ 
+      lg 0,05       - 1,301 
+n = ---------- = ----------- = 9,1 Tage --> <span style="color:red;">nach 10 Tagen</span> 
+      lg 0,72       - 0,1427    
+
+ 
+</p></pre>

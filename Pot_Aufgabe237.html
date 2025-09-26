@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potenzen, Wurzeln, Logarithmen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 237
+
+Ein Bienenvolk ist innerhalb einer Woche von 50 000 Bienen 
+auf 40 000 zurückgegangen. 
+Nach wie viel Wochen ist die Population bei exponentieller 
+Abnahme nur noch halb so groß?  
+In welcher Woche stirbt die letzte Biene?  
+ 
+B<sub>1</sub> = B<sup>0</sup> * q 
+ 
+40 000 = 50 000 * q |:50 000 
+ 
+       40 000  
+q = ---------- = 0,8 = Abnahmefaktor 
+       50 000  
+ 
+B<sub>n</sub> = B<sub>0</sub> * q<sup>n</sup> 
+ 
+0,5 = q<sup>n</sup> 
+ 
+Logarithmieren: 
+ 
+lg 0,5 = lg 0,8<sup>n</sup> 
+ 
+lg 0,5 = n * lg 0,8 |:lg 0,8 
+ 
+     lg 0,5       - 0,301 
+<span style="color:red;">n</span> = --------- = ----------- <span style="color:red;">= 3,1 Wochen</span> 
+     lg 0,8      - 0,0969 
+ 
+B<sub>n</sub> = B<sub>0</sub> * q<sup>n</sup> 
+ 
+1 = 50 000 * 0,8<sup>n</sup> |:50 000 
+ 
+    1 
+---------- = 0,8<sup>n</sup> 
+  50 000 
+ 
+Logarithmieren: 
+ 
+         1 
+lg ---------- = lg 0,8<sup>n</sup> 
+     50 000 
+
+lg 1 – lg 50 000 = n * lg 0,8n |:lg 0,8 
+ 
+      lg 1 – lg 50 000      0 – 4,699  
+n = ------------------- = ------------- = 48,5 Wochen 
+          lg 0,8            - 0,0969 
+ 
+<span style="color:red;">In der 49. Woche gibt es keine Bienen mehr.</span>
+
+  
+
+ 
+</p></pre>

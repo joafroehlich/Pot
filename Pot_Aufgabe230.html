@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potenzen, Wurzeln, Logarithmen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 230
+
+Wie viel müsste zu Beginn eines jeden Jahres eingezahlt werden, 
+wenn nach 4 Jahren 12 000 € angespart sein sollen?  
+ 
+Wachstumsfaktor q = 1,0525; R = Rate 
+ 
+                     Anfang                          Ende 
+ 
+1. Jahr           5 000 € + R                5 000 * q + R * q 
+ 
+2. Jahr           5 000 * q + R * q + R      5 000 * q<sup>2</sup> + R * q<sup>2</sup> + R * q              
+ 
+Ende 3. Jahr                                 5 000 * q<sup>3</sup> + R * (q<sup>3</sup> + q<sup>2</sup> + q)   
+ 
+Ende 4. Jahr                                 5 000 * q<sup>4</sup> + R * (q<sup>4</sup> + q<sup>3</sup> + q<sup>2</sup> + q)   
+ 
+K<sub>4</sub> =  5 000 * q<sup>4</sup> + R * (q<sup>4</sup> + q<sup>3</sup> + q<sup>2</sup> + q)  |- 5000 * q<sup>4</sup> 
+ 
+K<sub>4</sub> - 5 000 * q<sup>4</sup> = R * (q<sup>4</sup> + q<sup>3</sup> + q<sup>2</sup> + q) |:(q<sup>4</sup> + q<sup>3</sup> + q<sup>2</sup> + q) 
+ 
+       K<sub>4</sub> - 5 000 * q<sup>4</sup> 
+R = -------------------- =  
+      q<sup>4</sup> + q<sup>3</sup> + q<sup>2</sup> + q     
+ 
+ 
+            12 000 – 5 000 * 1,0525<sup>4</sup>  
+R = ---------------------------------------- =  
+      1,0525<sup>4</sup> + 1,0525<sup>3</sup> + 1,0525<sup>2</sup> + 1,0525     
+ 
+<span style="color:red;">R = 1 287,94 €</span>  
+
+ 
+</p></pre>
