@@ -12,19 +12,41 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 198
+<pre><b><p class ="Aufgabe">Aufgabe 198
 
 Das Alter von Holz kann man durch die Aktivität 
 von Kohlenstoffatomen im Holz bestimmen. 
 Wie alt ist ein Holz, das noch eine Aktivität 
-von 13% hat, wenn die Halbwertzeit des Kohlenstoffs 
-6 000 Jahre beträgt?     
+von 13% hat, wenn die Halbwertzeit des 
+Kohlenstoffs 6 000 Jahre beträgt?     
 
-<img src="Aufgabe198.jpg">
+A<sub>0</sub> = 1 oder 100%
 
- 
-</p></pre>
+A6000 = A0 * q<sup>6000</sup>
+
+0,5 = 1 * q<sup>6000</sup>  |<sup>6000</sup>&#8730; 
+
+q = <math>
+  <mroot>
+    <mi>0,5</mi>
+    <mn>6000</mn>
+  </mroot>
+</math> = 0,99988 
+
+0,13 = 0,99988<sup>n</sup>
+
+Logarithmieren:
+
+lg 0,13 = lg 0,99988<sup>n</sup>
+
+lg 0,13 = n * lg 0,99988 | :lg 0,99988
+
+       lg 0,13        -0,8861 
+<span style="color:red;">n</span> = ------------- = ------------ <span style="color:red;">= 17 040 Jahre</span>
+     lg 0,99988      -0,000052 
+     
+</p></b></pre>

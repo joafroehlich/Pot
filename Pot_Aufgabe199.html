@@ -12,19 +12,55 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 199
+<pre><b><p class ="Aufgabe">Aufgabe 199
 
 Auf einem Sparbuch sind 250 € zu einem Zinssatz 
 von 3,5 % angelegt. 
 Wie viel € sind nach 5 Jahren angespart?  
 Nach wie viel Jahren sind 500 € angespart?  
-Mit welchem Zinssatz q wären nach 5 Jahren 500 € angespart?  
+Mit welchem Zinssatz q wären nach 5 Jahren 500 € 
+angespart?  
 
-<img src="Aufgabe199.jpg">
+Wachstumsfaktor q = 1,035
 
+K<sub>5</sub> = K<sub>0</sub> * q<sup>5</sup>
+
+<span style="color:red;">K<sub>5</sub></span> = 250 € * 1,035<sup>5</sup> <span style="color:red;">= 296,92 €</span>
+
+K<sub>n</sub> = K<sub>0</sub> * q<sup>n</sup>
+
+500 € = 250 € * 1,035<sup>n</sup> | :250
+
+2 = 1,035<sup>n</sup>
+
+Logarithmieren:
+
+lg 2 = lg 1,035<sup>n</sup> 
+
+lg 2 = n * lg 1,035 |:lg 1,035
  
-</p></pre>
+       lg 2        0,301
+<span style="color:red;">n</span> = ----------- = --------- = 20,2 Jahre --> 
+     lg 1,035      0,0149 
+
+<span style="color:red;">= 21 Jahre</span>     
+
+K<sub>5</sub> = K<sub>0</sub> * q<sup>5</sup>
+
+500 € = 250 € * q<sup>5</sup> | :250
+
+2 = q<sup>5</sup> |<sup>5</sup>&#8730;  
+
+<span style="color:red;">q =</span> <math>
+  <mroot>
+    <mi>2</mi>
+    <mn>5</mn>
+  </mroot>
+</math> = 1,149 --> nötiger Zinssatz <span style="color:red;">14,9%</span>
+
+
+</p></b></pre>
