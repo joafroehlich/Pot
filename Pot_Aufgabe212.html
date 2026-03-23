@@ -12,47 +12,51 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 212
+<pre><b><p class ="Aufgabe">Aufgabe 212
 
 1974 betrug der Bleibedarf 3,39 Millionen t. 
 Bei gleich bleibendem Bedarf sollte der Vorrat 
 bis 2021 reichen. Wie groß war der Bleivorrat? 
 Wie lange reicht der Vorrat, wenn man von einem 
 jährlichen Bedarfszuwachs von 3% ausgeht? 
-Wie lange reicht er bei einem Zuwachs von 3%, wenn 
-40% des Bedarfs durch Wiederverwendung gedeckt werden?  
+Wie lange reicht er bei einem Zuwachs von 3%, 
+wenn 40% des Bedarfs durch Wiederverwendung 
+gedeckt werden?  
  
 Von 1974 – 2021 sind es 47 Jahre. 
  
-Vorrat = 47 Jahre * 3,39 Mio. t/Jahr = 159,3 Mio.t 
+Vorrat = 47 Jahre * 3,39 Mio.t/Jahr = 159,3 Mio.t 
  
 Wachstumsfaktor q = 1,03 
                     
-             Vorrat Mio. t                    Abbau Mio. t       
+        Vorrat Mio. t            Abbau Mio. t       
  
-1.Jahr          159,3                            3,39  
+1.Jahr   159,3                        3,39  
  
-2. Jahr         159,3 – 3,39                     3,39 * 1,03      
+2. Jahr  159,3 – 3,39                 3,39 * 1,03      
  
-3. Jahr         159,3 – 3,39 – 3,39 * 1,03       3,39 * 1,03<sup>2</sup> 
+3. Jahr  159,3 – 3,39 – 3,39 * 1,03   3,39*1,03<sup>2</sup> 
     . 
     . 
     . 
-n-2 tes Jahr      ............................   3,39 * 1,03<sup>n-3</sup> 
+n-2 tes Jahr      .............   3,39 * 1,03<sup>n-3</sup> 
  
-n-1 tes Jahr      ............................   3,39 * 1,03<sup>n-2</sup>   
+n-1 tes Jahr      .............   3,39 * 1,03<sup>n-2</sup>   
  
-n tes Jahr         ............................  3,39 * 1,03<sup>n-1</sup>   
+n tes Jahr         .............  3,39 * 1,03<sup>n-1</sup>   
  
 Vorrat im n-ten Jahr und 3,39 ausgeklammert: 
  
-V = 159,3 – 3,39*(1,03 + 1,03<sup>2</sup> + 1,03<sup>3</sup> ... + 1,03<sup>n-3</sup> + 1,03<sup>n-2</sup> + 1,03<sup>n-1</sup>) 
+V = 159,3 – 3,39*(1,03 + 1,03<sup>2</sup> + 1,03<sup>3</sup> ... + 
+
++ 1,03<sup>n-3</sup> + 1,03<sup>n-2</sup> + 1,03<sup>n-1</sup>) 
  
-In der Klammer steht eine geometrische Reihe, deren Summe ist: 
+In der Klammer steht eine geometrische Reihe, 
+deren Summe ist: 
  
       1 - 1,03<sup>n</sup> 
 S<sub>n</sub> = ----------- 
@@ -101,26 +105,29 @@ n * lg 1,03 = lg 2,41 |:lg 1,03
 <span style="color:red;">n</span> = --------- = --------- <span style="color:red;">= 29,8 Jahre</span>  
      lg 1,03      0,0128 
  
-         Abbau Mio. t           40%          tatsächlicher   
-                               Mio. t      Vorratsabbau Mio. t    
+              40%             tatsächlicher   
+            Mio. t           Vorratsabbau Mio. t    
  
-1.Jahr    3,39            - 0,4 * 3,39   =     0,6 * 3,39   
+1.Jahr    -0,4 * 3,39          = 0,6 * 3,39   
  
-2. Jahr   3,39 * 1,03  - 0,4 * 3,39 * 1,03 = 0,6 * 3,39 * 1,03     
+2. Jahr   -0,4 * 3,39 * 1,03  = 0,6 * 3,39 * 1,03     
  
-3. Jahr                                    = 0,6 * 3,39 * 1,03<sup>2</sup> 
+3. Jahr                       = 0,6*3,39*1,03<sup>2</sup> 
     . 
     . 
     . 
-n-2tes Jahr       .......................  = 0,6 * 3,39 * 1,03<sup>n-3</sup> 
+n-2tes Jahr       ..........  = 0,6*3,39*1,03<sup>n-3</sup> 
  
-n-1tes Jahr       .......................  = 0,6 * 3,39 * 1,03<sup>n-2</sup>   
+n-1tes Jahr       ..........  = 0,6*3,39*1,03<sup>n-2</sup>   
  
-ntes Jahr         ......................   = 0,6 * 3,39 * 1,03<sup>n-1</sup>   
+ntes Jahr         ..........  = 0,6*3,39*1,03<sup>n-1</sup>   
  
-Vorrat im n-ten Jahr und wieder 3,39 ausgeklammert: 
+Vorrat im n-ten Jahr und wieder 3,39 
+ausgeklammert: 
  
-V = 159,3 – 0,6 * 3,39 * (1,03 + 1,03<sup>2</sup> + ... + 1,03<sup>n-2</sup> + 1,03<sup>n-1</sup>) 
+V = 159,3 – 0,6 * 3,39 * (1,03 + 1,03<sup>2</sup> + ... + 
+
++ 1,03<sup>n-2</sup> + 1,03<sup>n-1</sup>) 
  
                           1 – 1,03<sup>n</sup>    
 V = 159,3 – 0,6 * 3,39 * ------------ 
@@ -140,9 +147,9 @@ Für V = 0, d. h. Vorrat aufgebraucht gilt:
 0 = 159,3 + 0,6 * 3,39 * ------------- |*0,03 
                               0,03       
  
-0 = 4,779 + 0,6 * 3,39 * (1 – 1,03<sup>n</sup>) | -4,779 
+0 = 4,779 + 0,6 * 3,39 * (1 – 1,03<sup>n</sup>) |-4,779 
 
- - 4,779 = 0,6 * 3,39 * (1 – 1,03<sup>n</sup>) | :0,6*3,39 
+ - 4,779 = 0,6 * 3,39 * (1 – 1,03<sup>n</sup>) |:0,6*3,39 
 
   - 4,779 
 ------------- = 1 – 1,03<sup>n</sup> 
@@ -165,6 +172,4 @@ n * lg 1,03 = lg 3,35 |:lg 1,03
      lg 1,03      0,0128
   
 
-
- 
-</p></pre>
+</p></b></pre>
