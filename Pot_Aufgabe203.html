@@ -12,16 +12,44 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 203
+<pre><b><p class ="Aufgabe">Aufgabe 203
 
 Die Strahlung eines radioaktiven Stoffes hat sich 
 in 10 Jahren um 8% verringert. 
 Welche Halbwertszeit hat der Stoff? 
 
-<img src="Aufgabe203.jpg">
- 
-</p></pre>
+Strahlung nach 10 Jahren = 100% - 8% = 92% = 0,92
+
+S<sub>10</sub> = S<sub>0</sub> * q<sup>10</sup>
+
+0,92 = 1 * q<sup>10</sup> |<sup>10</sup>&#8730;  
+
+q = <math>
+  <mroot>
+    <mi>0,92</mi>
+    <mn>10</mn>
+  </mroot>
+</math> = 0,9917 = Abnahmefaktor/Jahr
+
+0,5 = 0,9917<sup>n</sup> 
+
+Logarithmieren:
+
+lg 0,5 = lg 0,9917<sup>n</sup>
+
+lg 0,5 = n * lg 0,9917 |:lg 0,9917
+
+
+       lg 0,5       -0,301 
+<span style="color:red;">n</span> = ----------- = ---------- = 83,6 Jahre 
+     lg 0,9917      -0,0036  
+
+--> <span style="color:red;">= 84 Jahre</span>
+
+
+</p></b></pre>
+
