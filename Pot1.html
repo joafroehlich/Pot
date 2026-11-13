@@ -7,38 +7,97 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Potenzen, Wurzeln, Logarithmen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
 
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-        
+
+<div class="check">
+
 <!--//Aufgabe 1-->
 
-  <pre><b><p class="Aufgabe">Aufgabe 1
+  <h2>Aufgabe 1</h2><p>
 
-5<sup>2</sup> + 7<sup>2</sup> = 
+<math mathsize="1em"><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><msup><mn>7</mn><mn>2</mn></msup><mo>=</mo></math></p>
 
-<button  onclick="window.open('Pot_Aufgabe1.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe1.html');" >Lösung</button></p>
 
 <!--//Aufgabe 2-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2><p>
 
-(5 + 7)<sup>2</sup> = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+<math mathsize="1em"><msup><mfenced><mrow><mn>5</mn><mo>+</mo><mn>7</mn></mrow></mfenced><mn>2</mn></msup><mo>=</mo></math> <input type="text" id="Eintrag2" maxlength="3"> </input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe2() { 
@@ -56,18 +115,18 @@
 
         <!--//Aufgabe 3-->                  
 
-  <pre><p class="Aufgabe">Aufgabe 3
+  <h2>Aufgabe 3</h2><p>
 
-5<sup>3</sup> - 3<sup>3</sup> - 2<sup>3</sup> =   
+<math mathsize="1em"><msup><mn>5</mn><mn>3</mn></msup><mo>&#x2212;</mo><msup><mrow><mn>3</mn><mo>&#xA0;</mo></mrow><mn>3</mn></msup><mo>&#x2212;</mo><msup><mn>2</mn><mn>3</mn></msup><mo>=</mo></math> </p>  
 
-<button  onclick="window.open('Pot_Aufgabe3.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe3.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 4-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 4
+  <h2>Aufgabe 4</h2><p>
 
-(5 - 3 - 2)<sup>3</sup> = <input type="text" id="Eintrag4" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p></pre>
+<math mathsize="1em"><msup><mfenced><mrow><mn>5</mn><mo>&#x2212;</mo><mn>3</mn><mo>&#x2212;</mo><mn>2</mn></mrow></mfenced><mn>3</mn></msup><mo>=</mo></math> <input type="text" id="Eintrag4" maxlength="1" ></input> <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe4() { 
@@ -84,105 +143,99 @@
 
  <!--//Aufgabe 5-->  
 
-  <pre><p class="Aufgabe">Aufgabe 5
+  <h2>Aufgabe 5</h2><p>
 
-7a<sup>3</sup> - 2a<sup>3</sup> + 4a<sup>3</sup> + 11a<sup>3</sup> - 15a<sup>3</sup> =    
+<math mathsize="1em"><mn>7</mn><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup><mo>&#x2212;</mo><mn>2</mn><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup><mo>+</mo><mn>4</mn><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup><mo>+</mo><mn>11</mn><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup><mo>&#x2212;</mo><mn>15</mn><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup><mo>=</mo></math> </p>   
 
-<button  onclick="window.open('Pot_Aufgabe5.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe5.html');">Lösung</button></p>
 
  <!--//Aufgabe 6-->  
 
-  <pre><p class="Aufgabe">Aufgabe 6
+  <h2>Aufgabe 6</h2><p>
 
-14x<sup>7</sup> - 9x<sup>6</sup> + 12x<sup>5</sup> - 5x<sup>4</sup> =    
+<math mathsize="1em"><mn>14</mn><msup><mi mathvariant="normal">x</mi><mn>7</mn></msup><mo>&#x2212;</mo><mn>9</mn><msup><mi mathvariant="normal">x</mi><mn>6</mn></msup><mo>+</mo><mn>12</mn><msup><mi mathvariant="normal">x</mi><mn>5</mn></msup><mo>&#x2212;</mo><mn>5</mn><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup><mo>=</mo></math></p>  
 
-<button  onclick="window.open('Pot_Aufgabe6.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe6.html');">Lösung</button></p>
 
  <!--//Aufgabe 7-->  
 
-  <pre><p class="Aufgabe">Aufgabe 7
+  <h2>Aufgabe 7</h2><p>
 
-2ax<sup>8</sup> - 36b<sup>2</sup>x<sup>8</sup> + 7c<sup>3</sup>x<sup>8</sup> - 5d<sup>4</sup>x<sup>8</sup> =     
+<math mathsize="1em"><mn>2</mn><msup><mi mathvariant="normal">ax</mi><mn>8</mn></msup><mo>&#x2212;</mo><mn>36</mn><msup><mi mathvariant="normal">b</mi><mn>2</mn></msup><msup><mi mathvariant="normal">x</mi><mn>8</mn></msup><mo>+</mo><mn>7</mn><msup><mi mathvariant="normal">c</mi><mn>3</mn></msup><msup><mi mathvariant="normal">x</mi><mn>8</mn></msup><mo>&#x2212;</mo><mn>5</mn><msup><mi mathvariant="normal">d</mi><mn>4</mn></msup><msup><mi mathvariant="normal">x</mi><mn>8</mn></msup><mo>=</mo></math> </p>     
 
-<button  onclick="window.open('Pot_Aufgabe7.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe7.html');">Lösung</button></p>
 
  <!--//Aufgabe 8-->  
 
-  <pre><p class="Aufgabe">Aufgabe 8
+  <h2>Aufgabe 8</h2><p>
 
-x<sup>n</sup> * x<sup>4</sup> =      
+<math mathsize="1em"><msup><mi mathvariant="normal">x</mi><mi mathvariant="normal">n</mi></msup><mo>&#xd7;</mo><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup><mo>=</mo></math> </p>     
 
-<button  onclick="window.open('Pot_Aufgabe8.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe8.html');">Lösung</button></p>
 
  <!--//Aufgabe 9-->  
 
-  <pre><p class="Aufgabe">Aufgabe 9
+  <h2>Aufgabe 9</h2><p>
 
-p<sup>m</sup> * p<sup>m-1</sup> =      
+<math mathsize="1em"><msup><mi mathvariant="normal">p</mi><mi mathvariant="normal">m</mi></msup><mo>&#xd7;</mo><msup><mi mathvariant="normal">p</mi><mrow><mi mathvariant="normal">m</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msup></math> = </p>     
 
-<button  onclick="window.open('Pot_Aufgabe9.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe9.html');">Lösung</button></p>
 
  <!--//Aufgabe 10-->  
 
-  <pre><p class="Aufgabe">Aufgabe 10
+  <h2>Aufgabe 10</h2><p>
 
-t<sup>n</sup> * t<sup>7</sup> * t<sup>2-n</sup> =      
+<math mathsize="1em"><msup><mi mathvariant="normal">t</mi><mi mathvariant="normal">n</mi></msup><mo>&#xd7;</mo><msup><mi mathvariant="normal">t</mi><mn>7</mn></msup><mo>&#xd7;</mo><msup><mi mathvariant="normal">t</mi><mrow><mn>2</mn><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msup><mo>=</mo></math></p>      
 
-<button  onclick="window.open('Pot_Aufgabe10.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe10.html');">Lösung</button></p>
 
  <!--//Aufgabe 11-->  
 
-  <pre><p class="Aufgabe">Aufgabe 11
+  <h2>Aufgabe 11</h2><p>
 
-         1 
-4x<sup>2</sup>y<sup>3</sup> * ---x<sup>3</sup>y<sup>2</sup> * 0,5x<sup>3</sup>y<sup>3</sup> =
-         2     
-
-<button  onclick="window.open('Pot_Aufgabe11.html');">Lösung</button></p></pre>
+ <math mathsize="1em"><mn>4</mn><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><msup><mi mathvariant="normal">y</mi><mn>3</mn></msup><mo>&#xd7;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup><msup><mi mathvariant="normal">y</mi><mn>2</mn></msup><mo>&#xd7;</mo><mn>0</mn><mo>,</mo><mn>5</mn><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup><msup><mi mathvariant="normal">y</mi><mn>3</mn></msup><mo>=</mo></math> </p>
+ 
+<button  onclick="window.open('Pot_Aufgabe11.html');">Lösung</button></p>
 
  <!--//Aufgabe 12-->  
 
-  <pre><p class="Aufgabe">Aufgabe 12
+  <h2>Aufgabe 12</h2><p>
+ 
+<math mathsize="1em"><mfrac><mn>5</mn><mn>9</mn></mfrac><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup><msup><mi mathvariant="normal">b</mi><mn>2</mn></msup><mi mathvariant="normal">x</mi><mo>&#xd7;</mo><mfrac><mn>6</mn><mn>7</mn></mfrac><msup><mi mathvariant="normal">a</mi><mn>2</mn></msup><msup><mi mathvariant="normal">by</mi><mn>3</mn></msup><mo>&#xd7;</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mn>2</mn></msup><msup><mi mathvariant="normal">x</mi><mi mathvariant="normal">m</mi></msup><msup><mi mathvariant="normal">y</mi><mi mathvariant="normal">n</mi></msup><mo>=</mo></math> </p>
 
- 5          6          4 
----a<sup>3</sup>b<sup>2</sup>x * ---a<sup>2</sup>by<sup>3</sup> * ---a<sup>n</sup>b<sup>2</sup>x<sup>m</sup>y<sup>n</sup> =
- 9          7          5   
-
-<button  onclick="window.open('Pot_Aufgabe12.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe12.html');">Lösung</button></p>
 
  <!--//Aufgabe 13-->  
 
-  <pre><p class="Aufgabe">Aufgabe 13
+  <h2>Aufgabe 13</h2><p>
 
-x<sup>3n-2</sup> * 2x<sup>m-4n+7</sup> * 5x<sup>2n+m</sup> =  
+<math mathsize="1em"><msup><mi mathvariant="normal">x</mi><mrow><mn>3</mn><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mo>&#xd7;</mo><mn>2</mn><msup><mi mathvariant="normal">x</mi><mrow><mi mathvariant="normal">m</mi><mo>&#x2212;</mo><mn>4</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>7</mn></mrow></msup><mo>&#xd7;</mo><mn>5</mn><msup><mi mathvariant="normal">x</mi><mrow><mn>2</mn><mi mathvariant="normal">n</mi><mo>+</mo><mi mathvariant="normal">m</mi></mrow></msup><mo>=</mo></math> </p>
 
-<button  onclick="window.open('Pot_Aufgabe13.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe13.html');">Lösung</button></p>
 
  <!--//Aufgabe 14-->  
 
-  <pre><p class="Aufgabe">Aufgabe 14
+  <h2>Aufgabe 14</h2><p>
 
- 5           7         6  
----m<sup>x</sup>n<sup>2</sup>t<sup>5</sup> * ---mn<sup>y</sup>t<sup>3</sup> * ---m<sup>3</sup>nt<sup>z</sup> =       
- 6           8         7   
+<math mathsize="1em"><mfrac><mn>5</mn><mn>6</mn></mfrac><msup><mi mathvariant="normal">m</mi><mi mathvariant="normal">x</mi></msup><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><msup><mi mathvariant="normal">t</mi><mn>5</mn></msup><mo>&#xd7;</mo><mfrac><mn>7</mn><mn>8</mn></mfrac><msup><mi mathvariant="normal">mn</mi><mi mathvariant="normal">y</mi></msup><msup><mi mathvariant="normal">t</mi><mn>3</mn></msup><mo>&#xd7;</mo><mfrac><mn>6</mn><mn>7</mn></mfrac><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup><msup><mi mathvariant="normal">nt</mi><mn>2</mn></msup><mo>=</mo></math></p>
 
 <button  onclick="window.open('Pot_Aufgabe14.html');">Lösung</button></p></pre>
 
  <!--//Aufgabe 15-->  
 
-  <pre><p class="Aufgabe">Aufgabe 15
+  <h2>Aufgabe 15</h2><p>
 
-ab<sup>m-2n</sup>a<sup>2</sup>b<sup>3-m</sup> * 4a<sup>3</sup>b<sup>2-3n+5m</sup> =  
+<math mathsize="1em"><msup><mi mathvariant="normal">ab</mi><mrow><mi mathvariant="normal">m</mi><mo>&#x2212;</mo><mn>2</mn><mi mathvariant="normal">n</mi></mrow></msup><msup><mi mathvariant="normal">a</mi><mn>2</mn></msup><msup><mi mathvariant="normal">b</mi><mrow><mn>3</mn><mo>&#x2212;</mo><mi mathvariant="normal">m</mi></mrow></msup><mo>&#xd7;</mo><mn>4</mn><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup><msup><mi mathvariant="normal">b</mi><mrow><mn>2</mn><mo>&#x2212;</mo><mn>3</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>5</mn><mi mathvariant="normal">m</mi></mrow></msup><mo>=</mo></math> </p>
 
 <button  onclick="window.open('Pot_Aufgabe15.html');">Lösung</button></p></pre>
 
  <!--//Aufgabe 16-->  
 
-  <pre><p class="Aufgabe">Aufgabe 16
+  <h2>Aufgabe 16</h2><p>
 
-3x<sup>2</sup>(y - z)<sup>3</sup> * 5<sup>2</sup>x<sup>7</sup>(y - z)<sup>4</sup> * 2<sup>3</sup>x<sup>3</sup>(z - y)<sup>6</sup> =  
+<math mathsize="1em"><mn>3</mn><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><msup><mfenced><mrow><mi mathvariant="normal">y</mi><mo>&#x2212;</mo><mi mathvariant="normal">z</mi></mrow></mfenced><mn>3</mn></msup><mo>&#xd7;</mo><msup><mn>5</mn><mn>2</mn></msup><msup><mi mathvariant="normal">x</mi><mn>7</mn></msup><msup><mfenced><mrow><mi mathvariant="normal">y</mi><mo>&#x2212;</mo><mi mathvariant="normal">z</mi></mrow></mfenced><mn>4</mn></msup><mo>&#xd7;</mo><msup><mi mathvariant="normal">z</mi><mn>3</mn></msup><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup><msup><mfenced><mrow><mi mathvariant="normal">z</mi><mo>&#x2212;</mo><mi mathvariant="normal">y</mi></mrow></mfenced><mn>6</mn></msup><mo>=</mo></math> </p>
 
-<button  onclick="window.open('Pot_Aufgabe16.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe16.html');">Lösung</button></p>
 
  <!--//Aufgabe 17-->  
 
@@ -243,7 +296,7 @@ ab<sup>m-2n</sup>a<sup>2</sup>b<sup>3-m</sup> * 4a<sup>3</sup>b<sup>2-3n+5m</sup
 
   <pre><p class ="Aufgabe" >Aufgabe 22
 
-0,92<sup>4</sup> : 0,23<sup>4</sup> = <input type="text" id="Eintrag22" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
+0,92<sup>4</sup> : 0,23<sup>4</sup> = <input type="text" id="Eintrag22" maxlength="3" </input> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe22() { 
@@ -263,7 +316,7 @@ ab<sup>m-2n</sup>a<sup>2</sup>b<sup>3-m</sup> * 4a<sup>3</sup>b<sup>2-3n+5m</sup
   <pre><p class ="Aufgabe" >Aufgabe 23
 
            8
-0,375<sup>4</sup> * (---)<sup>4</sup> = <input type="text" id="Eintrag23" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
+0,375<sup>4</sup> * (---)<sup>4</sup> = <input type="text" id="Eintrag23" maxlength="1" </input> <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
            3    </p></pre>
  
                       <script>
@@ -284,7 +337,7 @@ ab<sup>m-2n</sup>a<sup>2</sup>b<sup>3-m</sup> * 4a<sup>3</sup>b<sup>2-3n+5m</sup
   <pre><p class ="Aufgabe" >Aufgabe 24
 
      1          2   
-(16 ---)<sup>3</sup> * (2 ---)<sup>3</sup> : 6<sup>3</sup> = <input type="text" id="Eintrag24" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button>
+(16 ---)<sup>3</sup> * (2 ---)<sup>3</sup> : 6<sup>3</sup> = <input type="text" id="Eintrag24" maxlength="3" </input> <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button>
      5          9   </p></pre>
 
                       <script>
