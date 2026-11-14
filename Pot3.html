@@ -7,18 +7,75 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Potenzen, Wurzeln, Logarithmen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
@@ -26,13 +83,15 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 67-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 67
+  <h2>Aufgabe 67</h2><p>
 
-  1
-(---)<sup>-3</sup> = <input type="text" id="Eintrag67" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef67" onclick="Aufgabe67()">Prüfen</button>
-  4 </p></pre> 
+<pre>  1
+(---)<sup>-3</sup> = <input type="text" id="Eintrag67" maxlength="2" ></input> <button id="Pruef67" onclick="Aufgabe67()">Prüfen</button>
+  4 </pre> 
     
  
                       <script>
@@ -50,19 +109,21 @@
                       
 <!--//Aufgabe 68-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 68
+    <h2>Aufgabe 68</h2><p>
 
-    1 
-(- ---)<sup>-4</sup> = <button  onclick="window.open('Pot_Aufgabe68.html');" >Lösung</button>  
-    3    </p></pre>
+<pre>    1 
+(- ---)<sup>-4</sup> =  
+    3    </pre>
+
+<button  onclick="window.open('Pot_Aufgabe68.html');" >Lösung</button>     
 
 <!--//Aufgabe 69-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 69
+  <h2>Aufgabe 69</h2><p>
 
-  5 
-(---)<sup>-1</sup> = <input type="text" id="Eintrag69" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef69" onclick="Aufgabe69()">Prüfen</button>
-  8    </p></pre> 
+<pre>  5 
+(---)<sup>-1</sup> = <input type="text" id="Eintrag69" maxlength="3" ></input> <button id="Pruef69" onclick="Aufgabe69()">Prüfen</button>
+  8    </pre> 
     
  
                       <script>
@@ -80,19 +141,24 @@
 
 <!--//Aufgabe 70-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 70
+    <h2>Aufgabe 70</h2><p>
 
-      1
-(- 2 ---)<sup>-3</sup> = <button  onclick="window.open('Pot_Aufgabe70.html');" >Lösung</button>
-      3</p></pre>
+<pre>      1
+(- 2 ---)<sup>-3</sup> = 
+      3</pre>
+
+<button  onclick="window.open('Pot_Aufgabe70.html');" >Lösung</button>      
 
 <!--//Aufgabe 71-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 71
+  <h2>Aufgabe 71</h2><p>
 
-  4        343
-(---)<sup>-3</sup> = ------ <button id="Pruef71" onclick="Aufgabe71()">Prüfen</button>
-  7       <input type="text" id="Eintrag71" maxlength="2" size="1" style= background-color:yellow ></input></p></pre> 
+<pre>  4        343
+(---)<sup>-3</sup> = ------ 
+  7         ?</pre>    
+  
+  
+? = <input type="text" id="Eintrag71" maxlength="2" ></input> <button id="Pruef71" onclick="Aufgabe71()">Prüfen</button></p>
     
  
                       <script>
@@ -110,22 +176,23 @@
                       
 <!--//Aufgabe 72-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 72
+    <h2>Aufgabe 72</h2><p>
 
- 4<sup>-3</sup>          
------ = <button  onclick="window.open('Pot_Aufgabe72.html');" >Lösung</button>
-  7   </p></pre>
+<pre> 4<sup>-3</sup>          
+----- = 
+  7   </pre>
 
+<button  onclick="window.open('Pot_Aufgabe72.html');" >Lösung</button>  
 
 <!--//Aufgabe 73-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 73
+  <h2>Aufgabe 73</h2><p>
 
-         1
+<pre>         1
 (x<sup>-2</sup>)<sup>3</sup> = ---
-         x<sup>?</sup>    
+         x<sup>?</sup></pre>    
 
-Fragezeichen = <input type="text" id="Eintrag73" maxlength="1"  size="1"></input> <button id="Pruef73" onclick="Aufgabe73()">Prüfen</button></p></pre> 
+? = <input type="text" id="Eintrag73" maxlength="1"  size="1"></input> <button id="Pruef73" onclick="Aufgabe73()">Prüfen</button></p>
     
                      <script>
                         function Aufgabe73() { 
@@ -141,17 +208,21 @@ Fragezeichen = <input type="text" id="Eintrag73" maxlength="1"  size="1"></input
                       </script>
 <!--//Aufgabe 74-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 74
+    <h2>Aufgabe 74</h2><p>
 
-(2x<sup>2</sup>)<sup>-3</sup> = <button  onclick="window.open('Pot_Aufgabe74.html');" >Lösung</button></p></pre>
+(2x<sup>2</sup>)<sup>-3</sup> = 
+
+<button  onclick="window.open('Pot_Aufgabe74.html');" >Lösung</button></p>
 
 <!--//Aufgabe 75-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 75
+  <h2>Aufgabe 75</h2><p>
 
-              x<sup>6</sup>
-(-5x<sup>-3</sup>)<sup>-2</sup> = ------- <button id="Pruef75" onclick="Aufgabe75()">Prüfen</button>
-            <input type="text" id="Eintrag75" maxlength="2" size="1" style= background-color:yellow ></input> </p></pre> 
+<pre>             x<sup>6</sup>
+(-5x<sup>-3</sup>)<sup>-2</sup> = ------ 
+              ?</pre>            
+
+? = <input type="text" id="Eintrag75" maxlength="2" ></input> <button id="Pruef75" onclick="Aufgabe75()">Prüfen</button></p>
     
  
                       <script>
@@ -169,19 +240,21 @@ Fragezeichen = <input type="text" id="Eintrag73" maxlength="1"  size="1"></input
                       
 <!--//Aufgabe 76-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 76
+    <h2>Aufgabe 76</h2><p>
 
-[(23x<sup>-3</sup>)<sup>8</sup>]<sup>0</sup> = <button  onclick="window.open('Pot_Aufgabe76.html');" >Lösung</button></p></pre>
+[(23x<sup>-3</sup>)<sup>8</sup>]<sup>0</sup> = 
+
+<button  onclick="window.open('Pot_Aufgabe76.html');" >Lösung</button></p>
 
 <!--//Aufgabe 77-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 77
+  <h2>Aufgabe 77</h2><p>
 
-                  b<sup>?</sup>
+<pre>                  b<sup>?</sup>
 [a * (b<sup>-2</sup>)<sup>3</sup>]<sup>-4</sup> = -----
-                  a<sup>4</sup>
+                  a<sup>4</sup></pre>
              
-Fragezeichen = <input type="text" id="Eintrag77" maxlength="2"  size="1"></input> <button id="Pruef77" onclick="Aufgabe77()">Prüfen</button></p></pre> 
+? = <input type="text" id="Eintrag77" maxlength="2"  size="1"></input> <button id="Pruef77" onclick="Aufgabe77()">Prüfen</button></p>
     
  
                       <script>
@@ -199,15 +272,17 @@ Fragezeichen = <input type="text" id="Eintrag77" maxlength="2"  size="1"></input
                       
 <!--//Aufgabe 78-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 78
+    <h2>Aufgabe 78</h2><p>
         
-(-2<sup>-3</sup>)<sup>4</sup> = <button  onclick="window.open('Pot_Aufgabe78.html');" >Lösung</button></p></pre>
+(-2<sup>-3</sup>)<sup>4</sup> = 
+
+<button  onclick="window.open('Pot_Aufgabe78.html');" >Lösung</button></p>
 
 <!--//Aufgabe 79-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 79
+  <h2>Aufgabe 79</h2><p>
 
-(-2<sup>-4</sup>)<sup>-3</sup> = <input type="text" id="Eintrag79" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef79" onclick="Aufgabe79()">Prüfen</button></p></pre> 
+(-2<sup>-4</sup>)<sup>-3</sup> = <input type="text" id="Eintrag79" maxlength="4" ></input> <button id="Pruef79" onclick="Aufgabe79()">Prüfen</button></p>
     
  
                       <script>
@@ -225,22 +300,19 @@ Fragezeichen = <input type="text" id="Eintrag77" maxlength="2"  size="1"></input
                       
 <!--//Aufgabe 80-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 80
+    <h2>Aufgabe 80</h2><p>
 
-     1 
-[( -----)<sup>-3</sup>]<sup>-2</sup> = <button  onclick="window.open('Pot_Aufgabe80.html');" >Lösung</button>
-    r<sup>-2</sup>   </p></pre>
+<math mathsize="1.2em"><msup><mfenced open="[" close="]"><mrow><msup><mfenced><mfrac><mn>1</mn><mrow><msup><mi mathvariant="normal">r</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup></mrow></mfrac></mfenced><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>=</mo></math> </p>
+
+<button  onclick="window.open('Pot_Aufgabe80.html');" >Lösung</button>    
 
 <!--//Aufgabe 81-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 81
+  <h2>Aufgabe 81</h2><p>
 
-    x<sup>-3</sup>y<sup>-2</sup>          x<sup>45</sup> * y<sup>?</sup>
-[(---------)<sup>5</sup>]<sup>-3</sup> = ----------    
-     z<sup>-4</sup>             z<sup>60</sup>
+<math mathsize="1.2em"><msup><mfenced open="[" close="]"><mrow><msup><mfenced><mfrac><mrow><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></msup><msup><mi mathvariant="normal">y</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup></mrow><mrow><msup><mi mathvariant="normal">z</mi><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></msup></mrow></mfrac></mfenced><mn>5</mn></msup></mrow></mfenced><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>=</mo><mfrac><mrow><msup><mi mathvariant="normal">x</mi><mn>45</mn></msup><mo>&#xd7;</mo><msup><mi mathvariant="normal">y</mi><mo>?</mo></msup></mrow><mrow><msup><mi mathvariant="normal">z</mi><mn>60</mn></msup></mrow></mfrac></math></p>
 
-Fragezeichen = <input type="text" id="Eintrag81" maxlength="2"  size="1"></input> <button id="Pruef81" onclick="Aufgabe81()">Prüfen</button></p></pre> 
-    
+? = <input type="text" id="Eintrag81" maxlength="2"  size="1"></input> <button id="Pruef81" onclick="Aufgabe81()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe81() { 
@@ -257,29 +329,19 @@ Fragezeichen = <input type="text" id="Eintrag81" maxlength="2"  size="1"></input
                       
 <!--//Aufgabe 82-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 82
+    <h2>Aufgabe 82</h2><p>
 
-(6x<sup>-5</sup>y<sup>-2</sup> - 2x<sup>-4</sup>y<sup>-3</sup> + 7x<sup>-3</sup>y<sup>-4</sup>) * 5x<sup>-1</sup>y<sup>-3</sup> = 
+<math mathsize="1em"><mfenced><mrow><mn>6</mn><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>5</mn></mrow></msup><msup><mi mathvariant="normal">y</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mo>&#x2212;</mo><mn>2</mn><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></msup><msup><mi mathvariant="normal">y</mi><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></msup><mo>+</mo><mn>7</mn><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></msup><msup><mi mathvariant="normal">y</mi><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></msup></mrow></mfenced><mo>&#xd7;</mo><mn>5</mn><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><msup><mi mathvariant="normal">y</mi><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></msup><mo>=</mo></math> </p>
 
-<button  onclick="window.open('Pot_Aufgabe82.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Pot_Aufgabe82.html');" >Lösung</button></p>
 
 <!--//Aufgabe 83-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 83
+  <h2>Aufgabe 83</h2><p>
 
-  2             5            4 
-(--- a<sup>n-2</sup>b<sup>3-n</sup> - --- a<sup>2n</sup>b<sup>-2n</sup> + --- a<sup>1-n</sup>b<sup>n+3</sup>) *
-  3             6            9 
-  
-    9
-* ---- a<sup>-n</sup>b<sup>2n</sup> =  
-   20               
- 
-    3           3        1   
-= ---- a<sup>?</sup>b<sup>n+3</sup> - --- a<sup>n</sup> + --- a<sup>1-2n</sup>b<sup>3n+3</sup> =  
-   10           8        5  
+<math mathsize="1em"><mfenced><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><msup><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>2</mn></mrow></msup><msup><mi mathvariant="normal">b</mi><mrow><mn>3</mn><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msup><mo>&#x2212;</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><msup><mi mathvariant="normal">a</mi><mrow><mn>2</mn><mi mathvariant="normal">n</mi></mrow></msup><msup><mi mathvariant="normal">b</mi><mrow><mo>&#x2212;</mo><mn>2</mn><mi mathvariant="normal">n</mi></mrow></msup><mo>+</mo><mfrac><mn>4</mn><mn>9</mn></mfrac><msup><mi mathvariant="normal">a</mi><mrow><mn>1</mn><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msup><msup><mi mathvariant="normal">b</mi><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>3</mn></mrow></msup></mrow></mfenced><mo>&#xd7;</mo><mfrac><mn>9</mn><mn>20</mn></mfrac><msup><mi mathvariant="normal">a</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msup><msup><mi mathvariant="normal">b</mi><mrow><mn>2</mn><mi mathvariant="normal">n</mi></mrow></msup><mo>=</mo><mfrac><mn>3</mn><mn>10</mn></mfrac><msup><mi mathvariant="normal">a</mi><mo>?</mo></msup><msup><mi mathvariant="normal">b</mi><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>3</mn></mrow></msup><mo>&#x2212;</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><mo>+</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><msup><mi mathvariant="normal">a</mi><mrow><mn>1</mn><mo>&#x2212;</mo><mn>2</mn><mi mathvariant="normal">n</mi></mrow></msup><msup><mi mathvariant="normal">b</mi><mrow><mn>3</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>3</mn></mrow></msup></math></p>
      
-Fragezeichen = <input type="text" id="Eintrag83" maxlength="2"  size="1"></input> <button id="Pruef83" onclick="Aufgabe83()">Prüfen</button></p></pre> 
+? = <input type="text" id="Eintrag83" maxlength="2"  size="1"></input> <button id="Pruef83" onclick="Aufgabe83()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -297,12 +359,14 @@ Fragezeichen = <input type="text" id="Eintrag83" maxlength="2"  size="1"></input
                       
 <!--//Aufgabe 84-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 84
+    <h2>Aufgabe 84</h2><p>
 
-(3x<sup>-3</sup> + 2x<sup>-4</sup> - x<sup>-5</sup>) : x<sup>6</sup> = <button  onclick="window.open('Pot_Aufgabe84.html');" >Lösung</button></p></b></pre>
+<math mathsize="1em"><mfenced><mrow><mn>3</mn><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></msup><mo>+</mo><mn>2</mn><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></msup><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mrow><mo>&#x2212;</mo><mn>5</mn></mrow></msup></mrow></mfenced><mo>&#xf7;</mo><msup><mi mathvariant="normal">x</mi><mn>6</mn></msup><mo>=</mo></math> </p>
+
+<button  onclick="window.open('Pot_Aufgabe84.html');" >Lösung</button></p>
 
 
-<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>
           
         <script>
             document.body.addEventListener("input", function(inputEvent) {
