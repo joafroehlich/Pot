@@ -7,18 +7,76 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Potenzen, Wurzeln, Logarithmen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
+
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
@@ -26,19 +84,23 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
-<!--//Aufgabe 125-->                     
-                      
-    <pre><b><p class="Aufgabe">Aufgabe 125
+<div class="check">
 
-log<sub>3</sub>81 = <button  onclick="window.open('Pot_Aufgabe125.html');" >Lösung</button></p></pre>   
+       <!--//Aufgabe 125--> 
+                      
+    <h2>Aufgabe 125</h2><p>
+
+<math mathsize="1em"><msub><mi>log</mi><mn>3</mn></msub><mfenced><mn>81</mn></mfenced><mo>=</mo></math> </p>     
+
+<button  onclick="window.open('Pot_Aufgabe125.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 126-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 126
+  <h2>Aufgabe 126</h2><p>
 
-        1
-log<sub>0,5</sub> ---- = <input type="text" id="Eintrag126" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button> 
-       64 </p></pre> 
+<math mathsize="1em"><msub><mi>log</mi><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msub><mfenced><mfrac><mn>1</mn><mn>64</mn></mfrac></mfenced><mo>=</mo></math> </p>    
+
+= <input type="text" id="Eintrag126" maxlength="1"  style= background-color:yellow ></input> <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button> </p>
     
  
                       <script>
@@ -62,9 +124,11 @@ log<sub>10</sub>0,0001 = <button  onclick="window.open('Pot_Aufgabe127.html');" 
 
 <!--//Aufgabe 128-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 128
+  <h2>Aufgabe 128</h2><p>
 
-log<sub>4</sub>0,0625 = <input type="text" id="Eintrag128" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p></pre> 
+<math mathsize="1em"><msub><mi>log</mi><mn>4</mn></msub><mfenced><mrow><mn>0</mn><mo>,</mo><mn>0625</mn></mrow></mfenced><mo>=</mo></math> </p>   
+
+= <input type="text" id="Eintrag128" maxlength="2"  style= background-color:yellow ></input> <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p> 
     
  
                       <script>
@@ -93,7 +157,7 @@ log<sub>a</sub>--- <button  onclick="window.open('Pot_Aufgabe129.html');" >Lösu
   <pre><p class ="Aufgabe" >Aufgabe 130
 
       1
-log<sub>q</sub>----  <input type="text" id="Eintrag130" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button> 
+log<sub>q</sub>----  <input type="text" id="Eintrag130" maxlength="2"  style= background-color:yellow ></input> <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button> 
      q<sup>n</sup></p></pre> 
     
  
@@ -122,7 +186,7 @@ log<sub>81</sub>3 = <button  onclick="window.open('Pot_Aufgabe131.html');" >Lös
 
                 1
 log<sub>64</sub>0,5 = - ------  
-             <input type="text" id="Eintrag132" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p></pre> 
+             <input type="text" id="Eintrag132" maxlength="1"  style= background-color:yellow ></input> <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -148,7 +212,7 @@ log<sub>5</sub>0,008 = <button  onclick="window.open('Pot_Aufgabe133.html');" >L
 
   <pre><p class ="Aufgabe" >Aufgabe 134
 
-log<sub>2</sub>x = 5  x = <input type="text" id="Eintrag134" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre> 
+log<sub>2</sub>x = 5  x = <input type="text" id="Eintrag134" maxlength="2"  style= background-color:yellow ></input> <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -174,7 +238,7 @@ log<sub>1/9</sub>x = -0,5 <button  onclick="window.open('Pot_Aufgabe135.html');"
 
                   1
 log<sub>3</sub>x = -2  x = ------
-                <input type="text" id="Eintrag136" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
+                <input type="text" id="Eintrag136" maxlength="1"  style= background-color:yellow ></input> <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -203,7 +267,7 @@ log<sub>x</sub>--- = -1 <button  onclick="window.open('Pot_Aufgabe137.html');" >
     
   <pre><p class ="Aufgabe" >Aufgabe 138
 
-log<sub>m</sub>m<sup>3</sup> = x  x = <input type="text" id="Eintrag138" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre> 
+log<sub>m</sub>m<sup>3</sup> = x  x = <input type="text" id="Eintrag138" maxlength="1"  style= background-color:yellow ></input> <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre> 
     
  
                       <script>
