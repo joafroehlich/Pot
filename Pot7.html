@@ -7,22 +7,80 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Potenzen, Wurzeln, Logarithmen</title>
 
-  <script id="MathJax-script" async
+<script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
+  
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
   
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
+
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Potenzen, Wurzeln, Logarithmen</p> 
@@ -30,13 +88,15 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
-<!--//Aufgabe 116-->
+<div class="check">
 
-  <pre ><b><p class ="Aufgabe" >Aufgabe 116
+       <!--//Aufgabe 116--> 
+                      
+    <h2>Aufgabe 116</h2><p>
 
-<math mathsize="1.2em"><msqrt><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup></mrow><mn>5</mn></mroot></msqrt><mo>=</mo><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup></mrow><mo>?</mo></mroot></math> 
+<math mathsize="1.2em"><msqrt><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup></mrow><mn>5</mn></mroot></msqrt><mo>=</mo><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup></mrow><mo>?</mo></mroot></math></p> 
 
-Fragezeichen = <input type="text"  id="Eintrag116" maxlength="1" size="1" > <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p></pre>
+? = <input type="text"  id="Eintrag116" maxlength="1" > <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p>
     
  
                       <script>
@@ -54,18 +114,20 @@ Fragezeichen = <input type="text"  id="Eintrag116" maxlength="1" size="1" > <but
                       
 <!--//Aufgabe 117-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 117
+    <h2>Aufgabe 117</h2><p>
 
-<math mathsize="1.2em"><mroot><mroot><mrow><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">x</mi></msup></mrow><mn>3</mn></mroot><mi mathvariant="normal">x</mi></mroot></math> = <button  onclick="window.open('Pot_Aufgabe117.html');" >Lösung</button></p></pre>   
+<math mathsize="1.2em"><mroot><mroot><mrow><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">x</mi></msup></mrow><mn>3</mn></mroot><mi mathvariant="normal">x</mi></mroot></math> = </p>
+
+<button  onclick="window.open('Pot_Aufgabe117.html');" >Lösung</button></p> 
    
 
 <!--//Aufgabe 118-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 118
+  <h2>Aufgabe 118</h2><p>
 
-<math mathsize="1.2em"><mroot><mfrac><mi mathvariant="normal">a</mi><msqrt><mi mathvariant="normal">a</mi></msqrt></mfrac><mn>3</mn></mroot><mo>=</mo><mroot><mi mathvariant="normal">a</mi><mo>?</mo></mroot></math>
+<math mathsize="1.2em"><mroot><mfrac><mi mathvariant="normal">a</mi><msqrt><mi mathvariant="normal">a</mi></msqrt></mfrac><mn>3</mn></mroot><mo>=</mo><mroot><mi mathvariant="normal">a</mi><mo>?</mo></mroot></math></p>
 
-Fragezeichen = <input type="text"  id="Eintrag118" maxlength="1" size="1" > <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p></pre>
+? = <input type="text"  id="Eintrag118" maxlength="1" size="1" > <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p>
     
                       <script>
                         function Aufgabe118() { 
@@ -82,17 +144,19 @@ Fragezeichen = <input type="text"  id="Eintrag118" maxlength="1" size="1" > <but
                       
 <!--//Aufgabe 119-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 119
+    <h2>Aufgabe 119</h2><p>
 
-<math mathsize="1.2em"><msqrt><mrow><mfrac><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi></mfrac><msqrt><mfrac><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi></mfrac></msqrt><msqrt><mfrac><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi></mfrac></msqrt></mrow></msqrt></math> = <button  onclick="window.open('Pot_Aufgabe119.html');" >Lösung</button></p></pre>   
+<math mathsize="1.2em"><msqrt><mrow><mfrac><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi></mfrac><msqrt><mfrac><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi></mfrac></msqrt><msqrt><mfrac><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi></mfrac></msqrt></mrow></msqrt></math> = </p>
+
+<button  onclick="window.open('Pot_Aufgabe119.html');" >Lösung</button></p>
 
 <!--//Aufgabe 120-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 120
+    <h2>Aufgabe 120</h2><p>
 
-<math mathsize="1.2em"><mroot><mrow><msup><mtext>m</mtext><mtext>2</mtext></msup><mtext>&#xd7;</mtext><msqrt><mrow><mtext>m</mtext><mtext>&#xd7;</mtext><mroot><mrow><msup><mtext>m</mtext><mtext>8</mtext></msup><mtext>&#xd7;</mtext><mroot><mrow><msup><mtext>m</mtext><mtext>8</mtext></msup></mrow><mtext>4</mtext></mroot></mrow><mtext>5</mtext></mroot></mrow></msqrt></mrow><mtext>3</mtext></mroot><mtext>=</mtext><mtext>m</mtext><mtext>&#xd7;</mtext><mroot><mtext>m</mtext><mtext>?</mtext></mroot></math>
+<math mathsize="1.2em"><mroot><mrow><msup><mtext>m</mtext><mtext>2</mtext></msup><mtext>&#xd7;</mtext><msqrt><mrow><mtext>m</mtext><mtext>&#xd7;</mtext><mroot><mrow><msup><mtext>m</mtext><mtext>8</mtext></msup><mtext>&#xd7;</mtext><mroot><mrow><msup><mtext>m</mtext><mtext>8</mtext></msup></mrow><mtext>4</mtext></mroot></mrow><mtext>5</mtext></mroot></mrow></msqrt></mrow><mtext>3</mtext></mroot><mtext>=</mtext><mtext>m</mtext><mtext>&#xd7;</mtext><mroot><mtext>m</mtext><mtext>?</mtext></mroot></math></p>
 
-Fragezeichen = <input type="text"  id="Eintrag120" maxlength="1" size="1" > <button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p></pre>
+? = <input type="text"  id="Eintrag120" maxlength="1"  > <button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p>
     
     
  
@@ -111,19 +175,19 @@ Fragezeichen = <input type="text"  id="Eintrag120" maxlength="1" size="1" > <but
                       
 <!--//Aufgabe 121-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 121
+    <h2>Aufgabe 121</h2><p>
 
-<math mathsize="1.2em"><mroot><mroot><mi mathvariant="normal">u</mi><mn>6</mn></mroot><mn>3</mn></mroot><mo>&#xd7;</mo><mroot><msqrt><mrow><msup><mi mathvariant="normal">u</mi><mn>4</mn></msup></mrow></msqrt><mn>9</mn></mroot><mo>&#xd7;</mo><mroot><mrow><msup><mi mathvariant="normal">u</mi><mn>7</mn></msup></mrow><mn>18</mn></mroot><mo>&#xd7;</mo><mroot><mrow><msup><mi mathvariant="normal">u</mi><mn>3</mn></msup></mrow><mn>9</mn></mroot></math> = 
+<math mathsize="1.2em"><mroot><mroot><mi mathvariant="normal">u</mi><mn>6</mn></mroot><mn>3</mn></mroot><mo>&#xd7;</mo><mroot><msqrt><mrow><msup><mi mathvariant="normal">u</mi><mn>4</mn></msup></mrow></msqrt><mn>9</mn></mroot><mo>&#xd7;</mo><mroot><mrow><msup><mi mathvariant="normal">u</mi><mn>7</mn></msup></mrow><mn>18</mn></mroot><mo>&#xd7;</mo><mroot><mrow><msup><mi mathvariant="normal">u</mi><mn>3</mn></msup></mrow><mn>9</mn></mroot></math> = </p>
 
-<button  onclick="window.open('Pot_Aufgabe121.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Pot_Aufgabe121.html');" >Lösung</button></p>
 
 <!--//Aufgabe 122-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 122
+  <h2>Aufgabe 122</h2><p>
 
-<math mathsize="1.2em"><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mrow><mn>4</mn></mroot><mo>&#xd7;</mo><mroot><mi mathvariant="normal">x</mi><mn>5</mn></mroot><mo>=</mo><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>19</mn></msup></mrow><mo>?</mo></mroot></math>
+<math mathsize="1.2em"><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mrow><mn>4</mn></mroot><mo>&#xd7;</mo><mroot><mi mathvariant="normal">x</mi><mn>5</mn></mroot><mo>=</mo><mroot><mrow><msup><mi mathvariant="normal">x</mi><mn>19</mn></msup></mrow><mo>?</mo></mroot></math></p>
 
-Fragezeichen = <input type="text"  id="Eintrag122" maxlength="2" size="1" > <button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p></pre>
+? = <input type="text"  id="Eintrag122" maxlength="2" > <button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p>
     
  
                       <script>
@@ -141,17 +205,19 @@ Fragezeichen = <input type="text"  id="Eintrag122" maxlength="2" size="1" > <but
                       
 <!--//Aufgabe 123-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 123
+    <h2>Aufgabe 123</h2><p>
 
-<math mathsize="1.2em"><mfrac><mrow><mroot><mn mathvariant="bold">2</mn><mn mathvariant="bold">4</mn></mroot><mo mathvariant="bold">&#xd7;</mo><msqrt><mn mathvariant="bold">3</mn></msqrt><mo mathvariant="bold">&#xd7;</mo><mroot><mn mathvariant="bold">2</mn><mn mathvariant="bold">6</mn></mroot></mrow><mrow><msqrt><mn mathvariant="bold">2</mn></msqrt><mo mathvariant="bold">&#xd7;</mo><mroot><mn mathvariant="bold">2</mn><mn mathvariant="bold">4</mn></mroot></mrow></mfrac></math> = <button  onclick="window.open('Pot_Aufgabe123.html');" >Lösung</button></p></pre>   
+<math mathsize="1.2em"><mfrac><mrow><mroot><mn >2</mn><mn >4</mn></mroot><mo >&#xd7;</mo><msqrt><mn >3</mn></msqrt><mo >&#xd7;</mo><mroot><mn >2</mn><mn >6</mn></mroot></mrow><mrow><msqrt><mn >2</mn></msqrt><mo >&#xd7;</mo><mroot><mn >2</mn><mn >4</mn></mroot></mrow></mfrac></math> = </p>
+
+<button  onclick="window.open('Pot_Aufgabe123.html');" >Lösung</button></p>
 
 <!--//Aufgabe 124-->
 
-  <pre ><p class ="Aufgabe" >Aufgabe 124
+  <h2>Aufgabe 124</h2><p>
 
-<math mathsize="1em"><mfrac><mrow><mn mathvariant="bold">2</mn><mo mathvariant="bold">+</mo><msqrt><mn mathvariant="bold">3</mn></msqrt></mrow><mrow><mn mathvariant="bold">1</mn><mo mathvariant="bold">+</mo><msqrt><mn mathvariant="bold">3</mn></msqrt></mrow></mfrac><mo mathvariant="bold">&#x2212;</mo><msqrt><mn mathvariant="bold">3</mn></msqrt><mo mathvariant="bold">=</mo><mo mathvariant="bold">&#xa0;</mo><mo mathvariant="bold">?</mo><mo mathvariant="bold">&#xd7;</mo><mfenced><mrow><mn mathvariant="bold">1</mn><mo mathvariant="bold">&#x2212;</mo><msqrt><mn mathvariant="bold">3</mn></msqrt></mrow></mfenced></math>
+<math mathsize="1em"><mfrac><mrow><mn >2</mn><mo >+</mo><msqrt><mn >3</mn></msqrt></mrow><mrow><mn >1</mn><mo >+</mo><msqrt><mn >3</mn></msqrt></mrow></mfrac><mo >&#x2212;</mo><msqrt><mn >3</mn></msqrt><mo >=</mo><mo >&#xa0;</mo><mo >?</mo><mo >&#xd7;</mo><mfenced><mrow><mn >1</mn><mo >&#x2212;</mo><msqrt><mn >3</mn></msqrt></mrow></mfenced></math> </p>
 
-Fragezeichen = <input type="text"  id="Eintrag124" maxlength="3" size="1"> <button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p></b></pre>
+? = <input type="text"  id="Eintrag124" maxlength="3" size="1"> <button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p>
     
  
                       <script>
@@ -167,7 +233,7 @@ Fragezeichen = <input type="text"  id="Eintrag124" maxlength="3" size="1"> <butt
                          
                       </script> 
 
-<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>
           
         <script>
             document.body.addEventListener("input", function(inputEvent) {
